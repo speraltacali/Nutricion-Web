@@ -16,7 +16,7 @@ namespace NA.Dominio.Entidades.Entidades
 
         public string Nombre { get; set; }
 
-        public string Dni { get; set; }
+        public string Dni { get; set; } 
 
         public DateTime FechaNacimiento { get; set; }
 
@@ -31,5 +31,7 @@ namespace NA.Dominio.Entidades.Entidades
         public virtual ICollection<InformeAntropometrico> InformeAntropometricos { get; set; }
 
         public virtual ICollection<ObraSocialPaciente> ObraSocialPacientes { get; set; }
+
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

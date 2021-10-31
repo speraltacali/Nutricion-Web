@@ -65,6 +65,8 @@
     <Compile Include="Entidades\ObraSocial.cs" />
     <Compile Include="Entidades\ObraSocialPaciente.cs" />
     <Compile Include="Entidades\Paciente.cs" />
+    <Compile Include="Entidades\Perfil.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
