@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using NA.Repositorio.Base;
+
+namespace NA.Dominio.Repositorio.Dieta
+{
+    public interface IDietaRepositorio : IRepositorio<Entidades.Entidades.Dieta> 
+    {
+    }
+}

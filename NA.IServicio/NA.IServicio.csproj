@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEBC3402-6288-41E6-8D96-ED9F8C8C5453}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NA.IServicio</RootNamespace>
+    <AssemblyName>NA.IServicio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circunferencia\Dto\CircunferenciaDto.cs" />
+    <Compile Include="Circunferencia\ICircunferenciaServicio.cs" />
+    <Compile Include="ContexturaCorporal\IContexturaCorporalServicio.cs" />
+    <Compile Include="ContexturaCorporal\Dto\ContexturaCorporalDto.cs" />
+    <Compile Include="DatoEstaticos\ItemDetalleLista.cs" />
+    <Compile Include="Dieta\Dto\DietaDto.cs" />
+    <Compile Include="Dieta\IDietaServicio.cs" />
+    <Compile Include="Documento\Dto\DocumentoDto.cs" />
+    <Compile Include="Documento\IDocumentoServicio.cs" />
+    <Compile Include="InformeAntropometrico\Dto\InformeAntropometricoDto.cs" />
+    <Compile Include="InformeAntropometrico\IInformeAntropometricoServicio.cs" />
+    <Compile Include="InformeCircunferencia\Dto\InformeCiercunferenciaDto.cs" />
+    <Compile Include="InformeCircunferencia\IInformeCircunferenciaServicio.cs" />
+    <Compile Include="ItemDetalle\Dto\ItemDetalleDto.cs" />
+    <Compile Include="ItemDetalle\IItemDetalleServicio.cs" />
+    <Compile Include="Item\Dto\ItemDto.cs" />
+    <Compile Include="Item\IItemServicio.cs" />
+    <Compile Include="ObraSocialPaciente\Dto\ObraSocialPacienteDto.cs" />
+    <Compile Include="ObraSocialPaciente\IObraSocialPacienteServicio.cs" />
+    <Compile Include="ObraSocial\Dto\ObraSocialDto.cs" />
+    <Compile Include="ObraSocial\IObraSocialServicio.cs" />
+    <Compile Include="Paciente\Dto\PacienteDto.cs" />
+    <Compile Include="Paciente\IPacienteServicio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NA.Dominio.Base\NA.Dominio.Base.csproj">
+      <Project>{E3F2EEA6-F8C4-47A9-A9B9-4E219D2C89E6}</Project>
+      <Name>NA.Dominio.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NA.Servicio.Base\NA.Servicio.Base.csproj">
+      <Project>{e5a18c7d-a6e2-482f-80c9-375a591d89a0}</Project>
+      <Name>NA.Servicio.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

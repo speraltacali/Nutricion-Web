@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA1082EB-85A5-42E3-90ED-823213179239}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nutrucion_App</RootNamespace>
+    <AssemblyName>Nutrucion-App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\_0001_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0001_Consulta.Designer.cs">
+      <DependentUpon>_0001_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0002_ABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0002_ABM.Designer.cs">
+      <DependentUpon>_0002_ABM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0003_Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0003_Perfil.Designer.cs">
+      <DependentUpon>_0003_Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0004_ABM_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0004_ABM_Paciente.Designer.cs">
+      <DependentUpon>_0004_ABM_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0005_ABM_Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0005_ABM_Item.Designer.cs">
+      <DependentUpon>_0005_ABM_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0006_ABM_ItemDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0006_ABM_ItemDetalle.Designer.cs">
+      <DependentUpon>_0006_ABM_ItemDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0007_Consulta_Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0007_Consulta_Item.Designer.cs">
+      <DependentUpon>_0007_Consulta_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0008_InformeAntropometrico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0008_InformeAntropometrico.Designer.cs">
+      <DependentUpon>_0008_InformeAntropometrico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0009_Consulta_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0009_Consulta_Base.Designer.cs">
+      <DependentUpon>_0009_Consulta_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0010_Consulta_Circunferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0010_Consulta_Circunferencia.Designer.cs">
+      <DependentUpon>_0010_Consulta_Circunferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0011_ABM_Circunferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0011_ABM_Circunferencia.Designer.cs">
+      <DependentUpon>_0011_ABM_Circunferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0012_ABM_Dieta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0012_ABM_Dieta.Designer.cs">
+      <DependentUpon>_0012_ABM_Dieta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0013_ABM_ValorCircunferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0013_ABM_ValorCircunferencia.Designer.cs">
+      <DependentUpon>_0013_ABM_ValorCircunferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0014_Consulta_ObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0014_Consulta_ObraSocial.Designer.cs">
+      <DependentUpon>_0014_Consulta_ObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0015_ABM_ObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0015_ABM_ObraSocial.Designer.cs">
+      <DependentUpon>_0015_ABM_ObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0016_Informe_Grafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0016_Informe_Grafico.Designer.cs">
+      <DependentUpon>_0016_Informe_Grafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0017_Afiliado_ObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0017_Afiliado_ObraSocial.Designer.cs">
+      <DependentUpon>_0017_Afiliado_ObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0018_ABM_Afiliado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0018_ABM_Afiliado.Designer.cs">
+      <DependentUpon>_0018_ABM_Afiliado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0019_Buscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0019_Buscador.Designer.cs">
+      <DependentUpon>_0019_Buscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0020_Mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0020_Mensaje.Designer.cs">
+      <DependentUpon>_0020_Mensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_0021_PantallaCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0021_PantallaCarga.Designer.cs">
+      <DependentUpon>_0021_PantallaCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Core\_0001_Consulta.resx">
+      <DependentUpon>_0001_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0002_ABM.resx">
+      <DependentUpon>_0002_ABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0003_Perfil.resx">
+      <DependentUpon>_0003_Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0004_ABM_Paciente.resx">
+      <DependentUpon>_0004_ABM_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0005_ABM_Item.resx">
+      <DependentUpon>_0005_ABM_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0006_ABM_ItemDetalle.resx">
+      <DependentUpon>_0006_ABM_ItemDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0007_Consulta_Item.resx">
+      <DependentUpon>_0007_Consulta_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0008_InformeAntropometrico.resx">
+      <DependentUpon>_0008_InformeAntropometrico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0009_Consulta_Base.resx">
+      <DependentUpon>_0009_Consulta_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0010_Consulta_Circunferencia.resx">
+      <DependentUpon>_0010_Consulta_Circunferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0011_ABM_Circunferencia.resx">
+      <DependentUpon>_0011_ABM_Circunferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0012_ABM_Dieta.resx">
+      <DependentUpon>_0012_ABM_Dieta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0013_ABM_ValorCircunferencia.resx">
+      <DependentUpon>_0013_ABM_ValorCircunferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0014_Consulta_ObraSocial.resx">
+      <DependentUpon>_0014_Consulta_ObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0015_ABM_ObraSocial.resx">
+      <DependentUpon>_0015_ABM_ObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0016_Informe_Grafico.resx">
+      <DependentUpon>_0016_Informe_Grafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0017_Afiliado_ObraSocial.resx">
+      <DependentUpon>_0017_Afiliado_ObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0018_ABM_Afiliado.resx">
+      <DependentUpon>_0018_ABM_Afiliado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0019_Buscador.resx">
+      <DependentUpon>_0019_Buscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0020_Mensaje.resx">
+      <DependentUpon>_0020_Mensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0021_PantallaCarga.resx">
+      <DependentUpon>_0021_PantallaCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NA.Dominio.Base\NA.Dominio.Base.csproj">
+      <Project>{E3F2EEA6-F8C4-47A9-A9B9-4E219D2C89E6}</Project>
+      <Name>NA.Dominio.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NA.IServicio\NA.IServicio.csproj">
+      <Project>{DEBC3402-6288-41E6-8D96-ED9F8C8C5453}</Project>
+      <Name>NA.IServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NA.Servicio.Base\NA.Servicio.Base.csproj">
+      <Project>{E5A18C7D-A6E2-482F-80C9-375A591D89A0}</Project>
+      <Name>NA.Servicio.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NA.Servicio\NA.Servicio.csproj">
+      <Project>{A8A695EF-397C-4095-9AB4-F3FD5AD016D4}</Project>
+      <Name>NA.Servicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondorosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+    <None Include="Resources\add_simple.png" />
+    <None Include="Resources\edit_simple.png" />
+    <None Include="Resources\cancel_simple.png" />
+    <None Include="Resources\delete_simple.png" />
+    <None Include="Resources\alert_simple.png" />
+    <None Include="Resources\back_simple.png" />
+    <None Include="Resources\search_simple.png" />
+    <None Include="Resources\porcentaje-Simple.png" />
+    <None Include="Resources\calendario_simple.png" />
+    <None Include="Resources\information_simple.png" />
+    <None Include="Resources\forward_simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoconsukta02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoconsulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mujer02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hombre02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abm01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver-inclinado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar-inclinado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar-inclinado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-inclinado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gympose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gympose02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimiza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calcelar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escoba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ejecutar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arm_muscle_male_body_icon_143229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vientre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo001rosa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilosMusculo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porcentaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peso02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grasa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grasa02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fecha01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesas02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corrert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correr01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correr02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen03.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>
