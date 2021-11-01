@@ -376,6 +376,9 @@ namespace Nutrucion_App.Core
                     };
 
                     _usuarioServicio.Agregar(crear);
+
+                    var agregar = new _0020_Mensaje(TipoOperacion.Agregar);
+                    agregar.ShowDialog();
                 }
             }
 

@@ -1,6 +1,8 @@
 ﻿using NA.Dominio.Base.Helpers;
+using NA.IServicio.Paciente;
 using NA.IServicio.Usuario;
 using NA.Servicio.Base.Seguridad;
+using NA.Servicio.Paciente;
 using NA.Servicio.Usuario;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,7 @@ namespace Nutrucion_App.Core
 {
     public partial class _0022_ABM_Usuario : _0002_ABM
     {
+        private readonly IPacienteServicio _pacienteServicio = new PacienteServicio();
         private readonly IUsuarioServicio _usuarioServicio = new UsuarioServicio();
         private readonly Encriptar _encriptar = new Encriptar();
 
@@ -28,15 +31,58 @@ namespace Nutrucion_App.Core
            :base(operacion,entidadId)
         {
             InitializeComponent();
-            CargarDatos();
+            CargarDatos(entidadId);
         }
 
-        public void CargarDatos()
+        public override void CargarDatos(long? entidadId)
         {
-            var user = _usuarioServicio.ObtenerPorIdPaciente(EntidadId.Value);
+            if(entidadId.HasValue)
+            {
+                var user = _usuarioServicio.ObtenerPorIdPaciente(entidadId.Value);
 
-            txtUsuario.Text = user.User;
-            txtPassword.Text = _encriptar.DesEncriptarPassword(user.Password);
+                txtUsuario.Text = user.User;
+                txtPassword.Text = _encriptar.DesEncriptarPassword(user.Password);
+            }
+            else
+            {
+                MessageBox.Show("No se encuentro el usuario solicitado.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public override void LimpiarControles()
+        {
+            if (!string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                txtUsuario.Text = string.Empty;
+            }
+
+            if (!string.IsNullOrEmpty(txtPassword.Text))
+            {
+                txtPassword.Text = string.Empty;
+            }
+        }
+
+        public override void EjecutarModificar()
+        {
+            try
+            {
+                var paciente = _pacienteServicio.ObtenerPorId(EntidadId.Value);
+                var usuario = _usuarioServicio.ObtenerPorIdPaciente(paciente.Id);
+
+                if(usuario != null)
+                {
+                    usuario.User = txtUsuario.Text;
+                    usuario.Password = txtPassword.Text;
+                }
+
+                RealizoOperacion = true;
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Uno o mas de los datos ingresados son invalidos.", "Advertencia",
+                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
     }

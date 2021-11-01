@@ -9,6 +9,8 @@ namespace NA.Servicio.Base.Seguridad
 {
     public class Encriptar
     {
+        private readonly string hash = @"foxle@rn";
+
         public string EncriptarPassword(string pass)
         {
             byte[] data = UTF8Encoding.UTF8.GetBytes(pass);
@@ -16,7 +18,7 @@ namespace NA.Servicio.Base.Seguridad
 
             using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
             {
-                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(pass));
+                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
                 using (TripleDESCryptoServiceProvider tripleDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
                 {
                     ICryptoTransform transform = tripleDes.CreateEncryptor();
@@ -35,7 +37,7 @@ namespace NA.Servicio.Base.Seguridad
 
             using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
             {
-                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(pass));
+                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
                 using (TripleDESCryptoServiceProvider tripleDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
                 {
                     ICryptoTransform transform = tripleDes.CreateDecryptor();
