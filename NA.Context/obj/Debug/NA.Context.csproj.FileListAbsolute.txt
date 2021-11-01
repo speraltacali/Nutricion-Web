@@ -92,7 +92,6 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\Enti
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.RelacionEntidades.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Ejercicio.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EjercicioRelacion.resources
@@ -117,3 +116,4 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.C
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.AssemblyReference.cache

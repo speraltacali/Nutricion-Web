@@ -47,8 +47,8 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CoreCompileInputs.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.AssemblyReference.cache

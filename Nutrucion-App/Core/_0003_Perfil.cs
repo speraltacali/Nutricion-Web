@@ -21,6 +21,7 @@ using NA.IServicio.InformeAntropometrico.Dto;
 using NA.Servicio.InformeAntropometrico;
 using NA.Servicio.Usuario;
 using NA.IServicio.Usuario;
+using NA.IServicio.Usuario.Dto;
 
 namespace Nutrucion_App.Core
 {
@@ -353,7 +354,7 @@ namespace Nutrucion_App.Core
 
             if(usuario != null)
             {
-                var fUsuario = new _0022_ABM_Usuario();
+                var fUsuario = new _0022_ABM_Usuario(TipoOperacion.Modificar , PacienteId);
                 fUsuario.ShowDialog();
             }
             else
@@ -361,8 +362,20 @@ namespace Nutrucion_App.Core
                 if(MessageBox.Show("El paciente seleccionado no tiene usuario , desea generarlo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                     == DialogResult.Yes)
                 {
-                    var fUsuario = new _0022_ABM_Usuario();
-                    fUsuario.ShowDialog();
+                    var paciente = _pacienteServicio.ObtenerPorId(PacienteId);
+
+                    var user = _usuarioServicio.GenerarNombreUsuario(paciente.Nombre, paciente.Apellido);
+
+                    var crear = new UsuarioDto
+                    {
+                        User = user,
+                        Password = "Nutricion" + DateTime.Now.Year,
+                        Bloqueado = false,
+                        Eliminado = false,
+                        PacienteId = paciente.Id
+                    };
+
+                    _usuarioServicio.Agregar(crear);
                 }
             }
 

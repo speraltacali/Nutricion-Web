@@ -23,6 +23,8 @@ namespace NA.IServicio.Usuario
 
         IEnumerable<UsuarioDto> ObtenerPorFiltro(string cadena);
 
+        string GenerarNombreUsuario(string nombre, string apellido);
+
         void Guardar();
     }
 }

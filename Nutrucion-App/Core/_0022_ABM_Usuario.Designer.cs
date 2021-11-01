@@ -30,10 +30,10 @@ namespace Nutrucion_App.Core
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.txtItem = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -48,15 +48,15 @@ namespace Nutrucion_App.Core
             this.label3.TabIndex = 9;
             this.label3.Text = "Usuario";
             // 
-            // txtItem
+            // txtUsuario
             // 
-            this.txtItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtItem.Location = new System.Drawing.Point(267, 102);
-            this.txtItem.Multiline = true;
-            this.txtItem.Name = "txtItem";
-            this.txtItem.Size = new System.Drawing.Size(305, 31);
-            this.txtItem.TabIndex = 10;
-            this.txtItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(267, 102);
+            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(305, 31);
+            this.txtUsuario.TabIndex = 10;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -70,45 +70,45 @@ namespace Nutrucion_App.Core
             this.label1.TabIndex = 11;
             this.label1.Text = "Contraseña";
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(267, 189);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 30);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(267, 189);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(305, 30);
+            this.txtPassword.TabIndex = 12;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(68, 263);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 31);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Habilitado";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Cooper Black", 20.25F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(207, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(271, 44);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Habilitado";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // _0022_ABM_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 323);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtItem);
+            this.Controls.Add(this.txtUsuario);
             this.Name = "_0022_ABM_Usuario";
             this.Text = "_0022_ABM_Usuario";
-            this.Controls.SetChildIndex(this.txtItem, 0);
+            this.Controls.SetChildIndex(this.txtUsuario, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.txtPassword, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,9 +117,9 @@ namespace Nutrucion_App.Core
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtItem;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button button1;
     }
 }
