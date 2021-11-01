@@ -11,8 +11,10 @@ using NA.Dominio.Base.Helpers;
 using NA.IServicio.Item;
 using NA.IServicio.ItemDetalle;
 using NA.IServicio.ItemDetalle.Dto;
+using NA.IServicio.Paciente;
 using NA.Servicio.Item;
 using NA.Servicio.ItemDetalle;
+using NA.Servicio.Paciente;
 
 namespace Nutrucion_App.Core
 {

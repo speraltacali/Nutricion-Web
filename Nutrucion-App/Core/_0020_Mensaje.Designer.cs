@@ -46,7 +46,7 @@
             this.pnlFondo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFondo.Location = new System.Drawing.Point(0, 0);
             this.pnlFondo.Name = "pnlFondo";
-            this.pnlFondo.Size = new System.Drawing.Size(271, 106);
+            this.pnlFondo.Size = new System.Drawing.Size(255, 62);
             this.pnlFondo.TabIndex = 0;
             // 
             // panel2
@@ -55,9 +55,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblOperacion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 106);
+            this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 82);
+            this.panel2.Size = new System.Drawing.Size(255, 82);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -86,7 +86,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Nutrucion_App.Properties.Resources.ejecutar01;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 204);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 150);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.TabIndex = 1;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 378);
+            this.ClientSize = new System.Drawing.Size(255, 332);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);

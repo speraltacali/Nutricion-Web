@@ -18,7 +18,8 @@ namespace NA.IServicio.Usuario
         IEnumerable<UsuarioDto> ObtenerTodo();
 
         UsuarioDto ObtenerPorId(long id);
-
+            
+        UsuarioDto ObtenerPorIdPaciente (long id);
 
         IEnumerable<UsuarioDto> ObtenerPorFiltro(string cadena);
 

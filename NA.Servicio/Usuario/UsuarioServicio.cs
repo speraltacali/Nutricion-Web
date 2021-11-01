@@ -55,7 +55,44 @@ namespace NA.Servicio.Usuario
 
         public UsuarioDto ObtenerPorId(long id)
         {
-            throw new NotImplementedException();
+            var dto = _usuarioRepositorio.ObtenerPorId(id);
+
+            if (dto == null) throw new Exception("El Usuario solicitado no se encuentra.");
+
+            return new UsuarioDto
+            {
+                Id = dto.Id,
+                User = dto.User,
+                Password = dto.Password,
+                Bloqueado = dto.Bloqueado,
+                Eliminado = dto.Eliminado,
+                Token = dto.Token,
+                PacienteId = dto.PacienteId
+            };
+        }
+
+        public UsuarioDto ObtenerPorIdPaciente(long id)
+        {
+            var dto = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x=>x.PacienteId == id);
+
+            if (dto != null)
+            {
+                return new UsuarioDto
+                {
+                    Id = dto.Id,
+                    User = dto.User,
+                    Password = dto.Password,
+                    Bloqueado = dto.Bloqueado,
+                    Eliminado = dto.Eliminado,
+                    Token = dto.Token,
+                    PacienteId = dto.PacienteId
+                };
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         public IEnumerable<UsuarioDto> ObtenerTodo()

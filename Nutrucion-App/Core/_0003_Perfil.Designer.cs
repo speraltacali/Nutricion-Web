@@ -47,7 +47,6 @@
             this.txtSexo = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pixImagenSexo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,18 +57,22 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvGrilla = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnUsuario = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pixImagenSexo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaItem)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,7 +153,7 @@
             // btnEliminarItem
             // 
             this.btnEliminarItem.BackColor = System.Drawing.Color.LightCoral;
-            this.btnEliminarItem.Font = new System.Drawing.Font("Lucida Sans Typewriter", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarItem.ForeColor = System.Drawing.Color.White;
             this.btnEliminarItem.Location = new System.Drawing.Point(258, 246);
             this.btnEliminarItem.Name = "btnEliminarItem";
@@ -163,7 +166,7 @@
             // btnAgregarItem
             // 
             this.btnAgregarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAgregarItem.Font = new System.Drawing.Font("Lucida Sans Typewriter", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarItem.ForeColor = System.Drawing.Color.DimGray;
             this.btnAgregarItem.Location = new System.Drawing.Point(3, 247);
             this.btnAgregarItem.Name = "btnAgregarItem";
@@ -282,16 +285,6 @@
             this.panel2.Size = new System.Drawing.Size(257, 280);
             this.panel2.TabIndex = 0;
             // 
-            // pixImagenSexo
-            // 
-            this.pixImagenSexo.BackColor = System.Drawing.Color.LightPink;
-            this.pixImagenSexo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pixImagenSexo.Location = new System.Drawing.Point(0, 0);
-            this.pixImagenSexo.Name = "pixImagenSexo";
-            this.pixImagenSexo.Size = new System.Drawing.Size(257, 279);
-            this.pixImagenSexo.TabIndex = 0;
-            this.pixImagenSexo.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkGray;
@@ -348,9 +341,9 @@
             // btnGrafico
             // 
             this.btnGrafico.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGrafico.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrafico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrafico.ForeColor = System.Drawing.Color.DimGray;
-            this.btnGrafico.Location = new System.Drawing.Point(873, 634);
+            this.btnGrafico.Location = new System.Drawing.Point(644, 634);
             this.btnGrafico.Name = "btnGrafico";
             this.btnGrafico.Size = new System.Drawing.Size(239, 40);
             this.btnGrafico.TabIndex = 3;
@@ -361,7 +354,7 @@
             // btnDetalle
             // 
             this.btnDetalle.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnDetalle.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetalle.ForeColor = System.Drawing.Color.DimGray;
             this.btnDetalle.Location = new System.Drawing.Point(2, 634);
             this.btnDetalle.Name = "btnDetalle";
@@ -374,9 +367,9 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAgregar.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAgregar.Location = new System.Drawing.Point(442, 634);
+            this.btnAgregar.Location = new System.Drawing.Point(340, 634);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(239, 40);
             this.btnAgregar.TabIndex = 3;
@@ -418,7 +411,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.IndianRed;
-            this.btnEliminar.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(2, 665);
             this.btnEliminar.Name = "btnEliminar";
@@ -428,25 +421,58 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnUsuario
+            // 
+            this.btnUsuario.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.btnUsuario.Location = new System.Drawing.Point(935, 634);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(239, 40);
+            this.btnUsuario.TabIndex = 3;
+            this.btnUsuario.Text = "Usuario";
+            this.btnUsuario.UseVisualStyleBackColor = false;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Nutrucion_App.Properties.Resources.Informa;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(442, 396);
+            this.pictureBox2.Location = new System.Drawing.Point(340, 396);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(239, 220);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Nutrucion_App.Properties.Resources.Usuario;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(935, 396);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(239, 220);
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Nutrucion_App.Properties.Resources.grafico1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(873, 396);
+            this.pictureBox1.Location = new System.Drawing.Point(644, 396);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(239, 220);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // pixImagenSexo
+            // 
+            this.pixImagenSexo.BackColor = System.Drawing.Color.LightPink;
+            this.pixImagenSexo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pixImagenSexo.Location = new System.Drawing.Point(0, 0);
+            this.pixImagenSexo.Name = "pixImagenSexo";
+            this.pixImagenSexo.Size = new System.Drawing.Size(257, 279);
+            this.pixImagenSexo.TabIndex = 0;
+            this.pixImagenSexo.TabStop = false;
             // 
             // _0003_Perfil
             // 
@@ -455,8 +481,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1204, 694);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvGrilla);
+            this.Controls.Add(this.btnUsuario);
             this.Controls.Add(this.btnGrafico);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.btnEliminar);
@@ -475,14 +503,15 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaItem)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -517,5 +546,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnUsuario;
     }
 }

@@ -19,6 +19,8 @@ using System.Windows.Forms;
 using NA.IServicio.InformeAntropometrico;
 using NA.IServicio.InformeAntropometrico.Dto;
 using NA.Servicio.InformeAntropometrico;
+using NA.Servicio.Usuario;
+using NA.IServicio.Usuario;
 
 namespace Nutrucion_App.Core
 {
@@ -28,6 +30,7 @@ namespace Nutrucion_App.Core
         private readonly IItemDetalleServicio _detalleServicio = new ItemDetalleServicio();
         private readonly IItemServicio _itemServicio = new ItemServicio();
         private readonly IInformeAntropometricoServicio _informeAntropometrico = new InformeAntropometricoServicio();
+        private readonly IUsuarioServicio _usuarioServicio = new UsuarioServicio();
 
         private static long PacienteId;
         private static long EntidadId;
@@ -333,7 +336,7 @@ namespace Nutrucion_App.Core
 
         public void FormularioItem(TipoOperacion operacion)
         {
-            var fModificar = new _0006_ABM_ItemDetalle(operacion, itemId);
+            var fModificar = new _0006_ABM_ItemDetalle(operacion,itemId);
             fModificar.ShowDialog();
             CargarDatosItem();
         }
@@ -344,5 +347,25 @@ namespace Nutrucion_App.Core
             fGrafico.ShowDialog();
         }
 
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            var usuario = _usuarioServicio.ObtenerPorIdPaciente(PacienteId);
+
+            if(usuario != null)
+            {
+                var fUsuario = new _0022_ABM_Usuario();
+                fUsuario.ShowDialog();
+            }
+            else
+            {
+                if(MessageBox.Show("El paciente seleccionado no tiene usuario , desea generarlo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                    == DialogResult.Yes)
+                {
+                    var fUsuario = new _0022_ABM_Usuario();
+                    fUsuario.ShowDialog();
+                }
+            }
+
+        }
     }
 }

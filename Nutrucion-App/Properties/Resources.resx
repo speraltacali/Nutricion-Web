@@ -133,17 +133,17 @@
   <data name="guardar-inclinado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardar-inclinado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abm01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abm01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="porcentaje-Simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\porcentaje-Simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gympose02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gympose02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="escoba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escoba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendario_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendario_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,20 +163,23 @@
   <data name="fondoconsukta02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoconsukta02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimiza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimiza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Items.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alert_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alert_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="altura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\altura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="corrert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corrert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="peso02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\peso02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Informa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Informa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,9 +199,6 @@
   <data name="forward_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forward_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagen02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagen02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="reloj1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reloj1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,6 +214,9 @@
   <data name="grasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grasa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="arm_muscle_male_body_icon_143229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arm_muscle_male_body_icon_143229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="porcentaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\porcentaje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,8 +229,11 @@
   <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salir1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peso02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peso02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grasa02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grasa02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,8 +250,8 @@
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoconsulta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoconsulta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abm01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abm01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fecha01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fecha01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,20 +259,17 @@
   <data name="fondorosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondorosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calcelar01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calcelar01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ejecutar01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ejecutar01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="altura" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\altura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagen02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gympose02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gympose02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="alert_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alert_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calcelar01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calcelar01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grafico1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grafico1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,17 +277,17 @@
   <data name="comidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comidas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pesas02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pesas02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gympose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gympose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arm_muscle_male_body_icon_143229" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arm_muscle_male_body_icon_143229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pesas02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pesas02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kilosMusculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilosMusculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,13 +301,13 @@
   <data name="back_simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back_simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondoconsulta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoconsulta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mujer02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mujer02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagen03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagen03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
