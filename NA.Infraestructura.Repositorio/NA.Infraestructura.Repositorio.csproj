@@ -63,6 +63,7 @@
     <Compile Include="ObraSocial\ObraSocialRepositorio.cs" />
     <Compile Include="Paciente\PacienteRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario\UsuarioRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NA.Dominio.Base\NA.Dominio.Base.csproj">

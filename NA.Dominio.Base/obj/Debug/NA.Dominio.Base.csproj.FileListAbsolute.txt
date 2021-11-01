@@ -32,3 +32,16 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Base\obj\Debug\NA.Dominio.B
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.pdb
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\NA.Dominio.Base.dll.config
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\NA.Dominio.Base.dll
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\NA.Dominio.Base.pdb
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\EntityFramework.dll
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\EntityFramework.xml
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.csproj.AssemblyReference.cache
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.csproj.CoreCompileInputs.cache
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.csproj.CopyComplete
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.dll
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Base\obj\Debug\NA.Dominio.Base.pdb

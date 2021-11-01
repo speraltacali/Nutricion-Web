@@ -125,6 +125,10 @@
     <Compile Include="Migrations\202110310133476_Seguridad.designer.cs">
       <DependentUpon>202110310133476_Seguridad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110312357587_CorreccionUsuario.cs" />
+    <Compile Include="Migrations\202110312357587_CorreccionUsuario.designer.cs">
+      <DependentUpon>202110312357587_CorreccionUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -197,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110310133476_Seguridad.resx">
       <DependentUpon>202110310133476_Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110312357587_CorreccionUsuario.resx">
+      <DependentUpon>202110312357587_CorreccionUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

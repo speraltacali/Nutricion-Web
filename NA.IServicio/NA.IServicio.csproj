@@ -75,6 +75,8 @@
     <Compile Include="Paciente\Dto\PacienteDto.cs" />
     <Compile Include="Paciente\IPacienteServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario\Dto\UsuarioDto.cs" />
+    <Compile Include="Usuario\IUsuarioServicio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NA.Dominio.Base\NA.Dominio.Base.csproj">

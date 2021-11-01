@@ -17,11 +17,9 @@ namespace NA.Dominio.Entidades.Entidades
 
         public bool Bloqueado { get; set; }
 
-        public int Token { get; set; }
+        public string Token { get; set; }
 
         public bool Eliminado { get; set; }
-
-        public long PerfilId { get; set; }
 
         public long PacienteId { get; set; }
 
