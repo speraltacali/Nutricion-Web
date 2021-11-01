@@ -1,24 +1,87 @@
-﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+﻿<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    @*inicia carrusel*@
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="/Content/Imagenes/Carusel1.JPG" alt="Los Angeles" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>NUTRICION • SALUD • FITNESS</h3>
+                        <p>Salud/belleza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="/Content/Imagenes/Carusel2.JPG" alt="Chicago" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>NUTRICION • SALUD • FITNESS</h3>
+                        <p>Salud/belleza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="/Content/Imagenes/Carusel3.JPG" alt="New York" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3 class="text-dark fw-bold">NUTRICION • SALUD • FITNESS</h3>
+                        <p class="text-dark fw-bold">Salud/belleza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+    @*Termina Carrucel*@
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Mejores Suplementos Naturales para Hombres o Para Mujeres</h2>
+            <p>
+                Ambos pueden Beneficiarse de los Mismo Suplementos.
+                Cuando la Base es Una Buena Alimentación y Buen entrenamiento
+                estos Suplementos Pueden Dar un Plus y Potenciar lo Mejor,
+                si no cuidas Lo demás, son un Gasto innecesario
+            </p>
+            @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>*@
+        </div>
+        <div class="col-md-4">
+            <h2>EL MÚSCULO TIENE MEMORIA</h2>
+            <p>
+                Volves a Entrenar y te aseguro que te va a Costar Muchísimo Menos que Cuando Comenzaste la Primera Vez 😌
+                No dejes de Superarte Día a Día 💪🏼.
+            </p>
+            @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>*@
+        </div>
+        <div class="col-md-4">
+            <h2>EN QUE ETAPA ESTAS?</h2>
+            <p>Sabias que si tenes una Buna Alimentación como base, Completa y Nutritiva, 
+            al momento de Elegir realizar una Definición (reduciendo calorias) o un Aumento de Masa
+            (aumentando un poco calorias) es Mucho Más Fácil!!.</p>
+            @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>*@
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
-    </div>
-</div>
+</body>
