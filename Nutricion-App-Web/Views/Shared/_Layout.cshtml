@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -14,6 +16,51 @@
         .modal-footer {
             background-color: #f9f9f9;
         }
+        /* Style the sidebar - fixed full height */
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: inherit;
+            z-index: 1;
+            top: 40px;
+            left: 0;
+            background-color: #e83283;
+            border-color: white;
+            overflow-x: hidden;
+            padding-top: 16px;
+            float: left;
+        }
+
+            /* Style sidebar links */
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                display: block;
+            }
+
+                /* Style links on mouse-over */
+                .sidebar a:hover {
+                    color: #f1f1f1;
+                }
+
+        /* Style the main content */
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @*@media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+                .sidebar a {
+                    font-size: 18px;
+                }
+        }*@
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -33,7 +80,7 @@
             <form class="d-flex">
                 <button type="button" class="btn btn-danger btn-sm">Salir</button>
             </form>
-        </div>        
+        </div>
     </nav>
     <!-- Modal Login-->
     <div class="modal fade opacity-100" id="myModal" role="dialog">
@@ -58,22 +105,30 @@
                         </div>
                         <br />
                         @*<div class="checkbox">
-                            <label><input type="checkbox" value="" checked>Recuerdame</label>
-                        </div>*@
+                                <label><input type="checkbox" value="" checked>Recuerdame</label>
+                            </div>*@
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Ingresar</button>
                     </form>
                 </div>
                 @*<div class="modal-footer bg-primary">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>                    
-                </div>*@
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                    </div>*@
             </div>
 
         </div>
     </div>
+    <div class="sidebar">
+        <a href="@Url.Action("Perfil", "Home")"><i class="fa fa-user"></i> Perfil</a>
+        <a href="@Url.Action("Informe", "Home")"><i class="fa fa-book"></i> Informe</a>
+    </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer style="text-align:center">
+        @RenderBody()        
+        <footer style="position: fixed;
+                       bottom: 0;
+                       text-align: center;
+                       width: 100%; 
+        ">
+            <hr />
             <p>&copy; @DateTime.Now.Year - NutriApp</p>
         </footer>
     </div>

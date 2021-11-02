@@ -15,9 +15,23 @@ namespace Nutricion_App_Web.Controllers
             return View();
         }
 
+        public ActionResult Perfil()
+        {
+            ViewBag.Title = "Perfil Page";
+
+            return View();
+        }
+
+        public ActionResult Informe()
+        {
+            ViewBag.Title = "Informe Page";
+
+            return View();
+        }
+
         public ActionResult Principal()
         {
-            ViewBag.Title = "Pagina Principal";
+            ViewBag.Title = "Principal page";
 
             return View("Principal", "_LayoutPrincipal");
         }
