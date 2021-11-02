@@ -15,12 +15,11 @@ namespace Nutricion_App_Web.Controllers
             return View();
         }
 
-        [HttpPost]
         public ActionResult Principal()
         {
             ViewBag.Title = "Pagina Principal";
 
-            return View();
+            return View("Principal", "_LayoutPrincipal");
         }
     }
 }
