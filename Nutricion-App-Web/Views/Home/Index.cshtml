@@ -1,101 +1,54 @@
-﻿<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /* Make the image fully responsive */
-        .carousel-inner img {
-            width: 500px;
-            height: 500px;
-        }
+    /* Style the sidebar - fixed full height */
+    .sidebar {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 40px;
+        left: 0;
+        background-color: #e83283;
+        border-color: white;
+        overflow-x: hidden;
+        padding-top: 16px;
+    }
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@*@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}*@
     </style>
 </head>
-<body>
-    @*inicia carrusel*@
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                    <img src="/Content/Imagenes/Carusel1.JPG" alt="Los Angeles" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>NUTRICION • SALUD • FITNESS</h3>
-                        <p>Salud/belleza</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <img src="/Content/Imagenes/Carusel2.JPG" alt="Chicago" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>NUTRICION • SALUD • FITNESS</h3>
-                        <p>Salud/belleza</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <img src="/Content/Imagenes/Carusel3.JPG" alt="New York" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3 class="text-dark fw-bold">NUTRICION • SALUD • FITNESS</h3>
-                        <p class="text-dark fw-bold">Salud/belleza</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    @*Termina Carrucel*@
-    <br />
-    <br />
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Mejores Suplementos Naturales para Hombres o Para Mujeres</h5>
-                    @*<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>*@
-                    <p class="card-text">
-                        Ambos pueden Beneficiarse de los Mismo Suplementos.
-                        Cuando la Base es Una Buena Alimentación y Buen entrenamiento
-                        estos Suplementos Pueden Dar un Plus y Potenciar lo Mejor,
-                        si no cuidas Lo demás, son un Gasto innecesario.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">EL MÚSCULO TIENE MEMORIA</h5>
-                    @*<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>*@
-                    <p class="card-text">
-                        Volves a Entrenar y te aseguro que te va a Costar Muchísimo Menos que Cuando Comenzaste la Primera Vez 😌
-                        No dejes de Superarte Día a Día 💪🏼.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                    <h5 class="card-title">EN QUE ETAPA ESTAS?</h5>
-                    @*<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>*@
-                    <p class="card-text">
-                        Sabias que si tenes una Buna Alimentación como base, Completa y Nutritiva,
-                        al momento de Elegir realizar una Definición (reduciendo calorias) o un Aumento de Masa
-                        (aumentando un poco calorias) es Mucho Más Fácil!!.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+<div class="sidebar">
+    <a href="@Url.Action("MenuPerfil", "Home")"><i class="fa fa-user"></i> Perfil</a>
+    <a href="#Informe"><i class="fa fa-book"></i> Informe</a>
+</div>
