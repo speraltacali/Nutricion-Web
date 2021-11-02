@@ -25,6 +25,8 @@ namespace NA.IServicio.Usuario
 
         string GenerarNombreUsuario(string nombre, string apellido);
 
+        bool PuedeIngresar(UsuarioDto dto);
+
         void Guardar();
     }
 }

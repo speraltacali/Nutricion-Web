@@ -118,5 +118,22 @@ namespace NA.Servicio.Usuario
 
             return nombreUsuario;
         }
+
+        public bool PuedeIngresar(UsuarioDto dto)
+        {
+            dto.Password = _encriptar.EncriptarPassword(dto.Password);
+
+            var usuario = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x => x.User == dto.User && x.Password == dto.Password);
+
+            if (usuario != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }
