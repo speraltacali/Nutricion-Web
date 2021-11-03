@@ -47,7 +47,21 @@ namespace NA.Servicio.Usuario
 
         public UsuarioDto Modificar(UsuarioDto dto)
         {
-            throw new NotImplementedException();
+            var usuario = _usuarioRepositorio.ObtenerPorId(dto.Id);
+
+            if(usuario != null)
+            {
+                usuario.User = dto.User;
+                usuario.Password = _encriptar.EncriptarPassword(dto.Password);
+                usuario.Bloqueado = dto.Bloqueado;
+                usuario.PacienteId = dto.PacienteId;
+
+                _usuarioRepositorio.Modificar(usuario);
+                Guardar();
+            }
+
+
+            return dto;
         }
 
         public IEnumerable<UsuarioDto> ObtenerPorFiltro(string cadena)
@@ -134,6 +148,11 @@ namespace NA.Servicio.Usuario
                 return false;
             }
 
+        }
+
+        public bool ValidarSiExiste(string user)
+        {
+            return _usuarioRepositorio.ObtenerTodo().Any(x=>x.User == user);
         }
     }
 }

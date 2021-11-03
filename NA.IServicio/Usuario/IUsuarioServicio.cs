@@ -27,6 +27,8 @@ namespace NA.IServicio.Usuario
 
         bool PuedeIngresar(UsuarioDto dto);
 
+        bool ValidarSiExiste(string user);
+
         void Guardar();
     }
 }

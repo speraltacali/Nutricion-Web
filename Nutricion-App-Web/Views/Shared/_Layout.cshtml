@@ -117,21 +117,7 @@
 
         </div>
     </div>
-    <div class="sidebar">
-        <a href="@Url.Action("Perfil", "Home")"><i class="fa fa-user"></i> Perfil</a>
-        <a href="@Url.Action("Informe", "Home")"><i class="fa fa-book"></i> Informe</a>
-    </div>
-    <div class="container body-content">
-        @RenderBody()        
-        <footer style="position: fixed;
-                       bottom: 0;
-                       text-align: center;
-                       width: 100%; 
-        ">
-            <hr />
-            <p>&copy; @DateTime.Now.Year - NutriApp</p>
-        </footer>
-    </div>
+    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

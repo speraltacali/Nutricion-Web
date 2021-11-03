@@ -71,11 +71,22 @@ namespace Nutrucion_App.Core
 
                 if(usuario != null)
                 {
-                    usuario.User = txtUsuario.Text;
-                    usuario.Password = txtPassword.Text;
+                    if(_usuarioServicio.ValidarSiExiste(usuario.User))
+                    {
+                        usuario.User = txtUsuario.Text;
+                        usuario.Password = txtPassword.Text;
+
+                        _usuarioServicio.Modificar(usuario);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya existe un usuario con ese nombre.", "Advertencia",
+                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+
+                    RealizoOperacion = true;
                 }
 
-                RealizoOperacion = true;
 
             }
             catch (Exception)

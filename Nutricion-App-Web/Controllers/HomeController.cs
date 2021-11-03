@@ -26,7 +26,7 @@ namespace Nutricion_App_Web.Controllers
             }
             else
             {
-                return View("Principal", "_LayoutPrincipal");
+                return View("Perfil", "_LayoutPrincipal");
             }
 
         }
