@@ -47,12 +47,31 @@ namespace NA.Servicio.Plan
 
         public IEnumerable<PlanDto> ObtenerPorFiltro(string cadena)
         {
-            throw new NotImplementedException();
+            return _planRepositorio.ObtenerPorFiltro(x => x.Titulo.Contains(cadena) ||
+                                                        x.Descripcion.Contains(cadena))
+                                                .Select(x => new PlanDto
+                                                {
+                                                    Id = x.Id,
+                                                    Titulo = x.Titulo,
+                                                    Descripcion = x.Descripcion,
+                                                    Eliminado = x.Eliminado
+                                                }).ToList();
         }
 
         public PlanDto ObtenerPorId(long id)
         {
-            throw new NotImplementedException();
+            var plan = _planRepositorio.ObtenerPorId(id);
+
+            if (plan == null) throw new Exception("El Plan solicitado no se encuentra.");
+
+            return new PlanDto
+            {
+                Id = plan.Id,
+                Titulo = plan.Titulo,
+                Descripcion = plan.Descripcion,
+                Eliminado = plan.Eliminado
+            };
+
         }
 
         public IEnumerable<PlanDto> ObtenerTodo()

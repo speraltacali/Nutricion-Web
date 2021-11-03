@@ -308,6 +308,12 @@ namespace NutricionApp
             OrderDecendente(string.Empty);
         }
 
+        private void ItemPlanesConsulta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
 
 
         //private void dgvGrilla_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

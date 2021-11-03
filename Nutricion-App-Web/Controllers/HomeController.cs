@@ -22,11 +22,11 @@ namespace Nutricion_App_Web.Controllers
 
             if (Existe) 
             {
-                return View();
+                return View("Perfil", "_Layout");
             }
             else
             {
-                return View("Perfil", "_LayoutPrincipal");
+                return View("Principal", "_LayoutPrincipal");
             }
 
         }
@@ -50,6 +50,11 @@ namespace Nutricion_App_Web.Controllers
             ViewBag.Title = "Principal page";
 
             return View("Principal", "_LayoutPrincipal");
+        }
+
+        public ActionResult PrincipalIndex()
+        {
+            return View();
         }
     }
 }

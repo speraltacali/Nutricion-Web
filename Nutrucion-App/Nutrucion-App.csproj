@@ -210,6 +210,12 @@
     <Compile Include="Core\_0022_ABM_Usuario.Designer.cs">
       <DependentUpon>_0022_ABM_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\_0023_Consulta_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_0023_Consulta_Plan.Designer.cs">
+      <DependentUpon>_0023_Consulta_Plan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Core\_0001_Consulta.resx">
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Core\_0022_ABM_Usuario.resx">
       <DependentUpon>_0022_ABM_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_0023_Consulta_Plan.resx">
+      <DependentUpon>_0023_Consulta_Plan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
