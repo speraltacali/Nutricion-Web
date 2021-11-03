@@ -8,7 +8,7 @@ namespace NA.Aplicacion.Conexion
 {
     public class CadenaConexion
     {
-        public static string Servidor = @"DESKTOP-ALCQ1RH";
+        public static string Servidor = @"DESKTOP-NK0OJF1";
 
         public static string BaseDatos = "NutriApps";
 

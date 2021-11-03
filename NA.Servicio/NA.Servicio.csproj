@@ -59,6 +59,7 @@
     <Compile Include="InformeCircunferencia\InformeCircunferenciaServicio.cs" />
     <Compile Include="ItemDetalle\ItemDetalleServicio.cs" />
     <Compile Include="Item\ItemServicio.cs" />
+    <Compile Include="Nivel\NivelServicio.cs" />
     <Compile Include="ObraSocialPaciente\ObraSocialPacienteServicio.cs" />
     <Compile Include="ObraSocial\ObraSocialServicio.cs" />
     <Compile Include="Paciente\PacienteServicio.cs" />

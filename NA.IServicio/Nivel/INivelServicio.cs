@@ -21,6 +21,8 @@ namespace NA.IServicio.Nivel
 
         IEnumerable<NivelDto> ObtenerPorFiltro(string cadena);
 
+        IEnumerable<NivelDto> ObtenerPorPlanId(long id);
+
         void Guardar();
     }
 }

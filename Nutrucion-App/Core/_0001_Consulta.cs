@@ -310,7 +310,14 @@ namespace NutricionApp
 
         private void ItemPlanesConsulta_Click(object sender, EventArgs e)
         {
+            var fPlanConsulta = new _0023_Consulta_Plan();
+            fPlanConsulta.ShowDialog();
+        }
 
+        private void ItemNivel_Click(object sender, EventArgs e)
+        {
+            var fNivelConsulta = new _0025_Consulta_Nivel();
+            fNivelConsulta.ShowDialog();    
         }
 
 

@@ -469,7 +469,7 @@
             // 
             this.txtTipoPlan.BackColor = System.Drawing.Color.White;
             this.txtTipoPlan.Enabled = false;
-            this.txtTipoPlan.Font = new System.Drawing.Font("Felix Titling", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoPlan.Location = new System.Drawing.Point(281, 45);
             this.txtTipoPlan.Multiline = true;
             this.txtTipoPlan.Name = "txtTipoPlan";
