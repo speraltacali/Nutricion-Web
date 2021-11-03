@@ -1,4 +1,5 @@
-﻿using NA.IServicio.Nivel;
+﻿using NA.Dominio.Base.Helpers;
+using NA.IServicio.Nivel;
 using NA.Servicio.Nivel;
 using System;
 using System.Collections.Generic;
@@ -57,9 +58,21 @@ namespace Nutrucion_App.Core
 
         public override bool EjecutarAgregarEntidad()
         {
-            var fNivel = new _0026_ABM_Nivel();
+            var fNivel = new _0026_ABM_Nivel(TipoOperacion.Agregar);
             fNivel.ShowDialog();
             return fNivel.RealizoOperacion;
+        }
+
+        public override bool EjecutarModificarEntidad(long? EntidadId)
+        {
+            var fNivel = new _0026_ABM_Nivel(TipoOperacion.Modificar , EntidadId);
+            fNivel.ShowDialog();
+            return fNivel.RealizoOperacion;
+        }
+
+        public override bool EjecutarEliminarEntidad(long? EntidadId)
+        {
+            return base.EjecutarEliminarEntidad(EntidadId);
         }
 
     }

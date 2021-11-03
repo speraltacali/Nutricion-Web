@@ -86,7 +86,7 @@ namespace Nutrucion_App.Core
         {
             try
             {
-                if(cmdItem.Text != string .Empty)
+                if(cmdItem.Text != string.Empty)
                 {
                     var detalle = new ItemDetalleDto
                     {

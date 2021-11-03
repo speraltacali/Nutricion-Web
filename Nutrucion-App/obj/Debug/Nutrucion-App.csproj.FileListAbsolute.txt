@@ -586,11 +586,11 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\N
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0022_ABM_Usuario.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0023_Consulta_Plan.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0024_ABM_Plan.resources
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0025_Consulta_Nivel.resources
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0026_ABM_Nivel.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Properties.Resources.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csproj.GenerateResource.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csproj.CoreCompileInputs.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.exe
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0025_Consulta_Nivel.resources
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0026_ABM_Nivel.resources
