@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circunferencia\ICircunferenciaRepositorio.cs" />
+    <Compile Include="Contenido\IContenidoRepositorio.cs" />
     <Compile Include="ContexturaCorporal\IContexturaCorporalRepositorio.cs" />
     <Compile Include="Dieta\IDietaRepositorio.cs" />
     <Compile Include="Documento\IDocumentoRepositorio.cs" />
@@ -59,10 +60,13 @@
     <Compile Include="InformeCircunferencia\IInformeCircunferenciaRepositorio.cs" />
     <Compile Include="ItemDetalle\IItemDetalleRepositorio.cs" />
     <Compile Include="Item\IItemRepositorio.cs" />
+    <Compile Include="Nivel\INivelRepositorio.cs" />
     <Compile Include="ObraSocialPaciente\IObraSocialPacienteRepositorio.cs" />
     <Compile Include="ObraSocial\IObraSocialRepositorio.cs" />
     <Compile Include="Paciente\IPacienteRepositorio.cs" />
+    <Compile Include="Plan\IPlanRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solicitud\ISolicitudRepositorio.cs" />
     <Compile Include="Usuario\IUsuarioRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>

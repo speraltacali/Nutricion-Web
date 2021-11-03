@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="Circunferencia\Dto\CircunferenciaDto.cs" />
     <Compile Include="Circunferencia\ICircunferenciaServicio.cs" />
+    <Compile Include="Contenido\Dto\ContenidoDto.cs" />
+    <Compile Include="Contenido\IContenidoServicio.cs" />
     <Compile Include="ContexturaCorporal\IContexturaCorporalServicio.cs" />
     <Compile Include="ContexturaCorporal\Dto\ContexturaCorporalDto.cs" />
     <Compile Include="DatoEstaticos\ItemDetalleLista.cs" />
@@ -68,13 +70,19 @@
     <Compile Include="ItemDetalle\IItemDetalleServicio.cs" />
     <Compile Include="Item\Dto\ItemDto.cs" />
     <Compile Include="Item\IItemServicio.cs" />
+    <Compile Include="Nivel\Dto\NivelDto.cs" />
+    <Compile Include="Nivel\INivelServicio.cs" />
     <Compile Include="ObraSocialPaciente\Dto\ObraSocialPacienteDto.cs" />
     <Compile Include="ObraSocialPaciente\IObraSocialPacienteServicio.cs" />
     <Compile Include="ObraSocial\Dto\ObraSocialDto.cs" />
     <Compile Include="ObraSocial\IObraSocialServicio.cs" />
     <Compile Include="Paciente\Dto\PacienteDto.cs" />
     <Compile Include="Paciente\IPacienteServicio.cs" />
+    <Compile Include="Plan\Dto\PlanDto.cs" />
+    <Compile Include="Plan\IPlanServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solicitud\Dto\SolicitudDto.cs" />
+    <Compile Include="Solicitud\ISolicitudServicio.cs" />
     <Compile Include="Usuario\Dto\UsuarioDto.cs" />
     <Compile Include="Usuario\IUsuarioServicio.cs" />
   </ItemGroup>

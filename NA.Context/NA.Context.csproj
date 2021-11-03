@@ -129,6 +129,14 @@
     <Compile Include="Migrations\202110312357587_CorreccionUsuario.designer.cs">
       <DependentUpon>202110312357587_CorreccionUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111030344220_EntidadesParaWeb.cs" />
+    <Compile Include="Migrations\202111030344220_EntidadesParaWeb.designer.cs">
+      <DependentUpon>202111030344220_EntidadesParaWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111030404121_SolicitudCorreccion.cs" />
+    <Compile Include="Migrations\202111030404121_SolicitudCorreccion.designer.cs">
+      <DependentUpon>202111030404121_SolicitudCorreccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -204,6 +212,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110312357587_CorreccionUsuario.resx">
       <DependentUpon>202110312357587_CorreccionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111030344220_EntidadesParaWeb.resx">
+      <DependentUpon>202111030344220_EntidadesParaWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111030404121_SolicitudCorreccion.resx">
+      <DependentUpon>202111030404121_SolicitudCorreccion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,8 +9,12 @@ namespace NA.Dominio.Entidades.Entidades
 {
     public class Plan : BaseEntity
     {
+        public string Titulo { get; set; }
+
         public string Descripcion { get; set; }
 
         public bool Eliminado { get; set; }
+
+        public virtual IEnumerable<Nivel> Nivel { get; set; }
     }
 }

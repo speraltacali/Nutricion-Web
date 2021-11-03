@@ -153,6 +153,8 @@ C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.C
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.UpInforme.resources
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Seguridad.resources
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionUsuario.resources
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EntidadesParaWeb.resources
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.SolicitudCorreccion.resources
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.GenerateResource.cache
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CoreCompileInputs.cache
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete

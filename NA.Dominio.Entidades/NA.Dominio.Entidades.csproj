@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Circunferencia.cs" />
+    <Compile Include="Entidades\Contenido.cs" />
     <Compile Include="Entidades\ContexturaCorporal.cs" />
     <Compile Include="Entidades\Dieta.cs" />
     <Compile Include="Entidades\Documento.cs" />
@@ -62,11 +63,13 @@
     <Compile Include="Entidades\InformeCircunferencia.cs" />
     <Compile Include="Entidades\Item.cs" />
     <Compile Include="Entidades\ItemDetalle.cs" />
+    <Compile Include="Entidades\Nivel.cs" />
     <Compile Include="Entidades\ObraSocial.cs" />
     <Compile Include="Entidades\ObraSocialPaciente.cs" />
     <Compile Include="Entidades\Paciente.cs" />
     <Compile Include="Entidades\Perfil.cs" />
     <Compile Include="Entidades\Plan.cs" />
+    <Compile Include="Entidades\Solicitud.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
