@@ -1,7 +1,4 @@
-﻿using NA.IServicio.Usuario;
-using NA.IServicio.Usuario.Dto;
-using NA.Servicio.Usuario;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,49 +8,22 @@ namespace Nutricion_App_Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IUsuarioServicio _usuarioServicio = new UsuarioServicio();
+        public ActionResult Index()
+        {
+            ViewBag.Title = "Index Page";
 
-        [HttpPost]
-        public ActionResult Index(UsuarioDto dto)
+            return View();
+        }
+        public ActionResult Home()
         {
             ViewBag.Title = "Home Page";
 
-            var Existe = _usuarioServicio.PuedeIngresar(dto);
-
-            if (Existe) 
-            {
-                return View("Perfil", "_Layout");
-            }
-            else
-            {
-                return View("Principal", "_LayoutPrincipal");
-            }
-
-        }
-
-        public ActionResult Perfil()
-        {
-            ViewBag.Title = "Perfil Page";
-
             return View();
         }
-
-        public ActionResult Informe()
+        public ActionResult Login()
         {
-            ViewBag.Title = "Informe Page";
+            ViewBag.Title = "Login Page";
 
-            return View();
-        }
-
-        public ActionResult Principal()
-        {
-            ViewBag.Title = "Principal page";
-
-            return View("Principal", "_LayoutPrincipal");
-        }
-
-        public ActionResult PrincipalIndex()
-        {
             return View();
         }
     }

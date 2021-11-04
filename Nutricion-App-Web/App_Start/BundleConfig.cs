@@ -20,7 +20,7 @@ namespace Nutricion_App_Web
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-Quartz.css",
+                      "~/Content/bootstrap.css",
                       "~/Content/site.css"));
         }
     }
