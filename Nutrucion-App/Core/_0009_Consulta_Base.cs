@@ -12,7 +12,7 @@ namespace Nutrucion_App.Core
 {
     public partial class _0009_Consulta_Base : Form
     {
-        private long? entidadId;
+        public long? entidadId;
         protected object ObjetoSeleccionado;
         private string _titulo;
 
@@ -242,6 +242,11 @@ namespace Nutrucion_App.Core
             {
                 TimerOpen.Stop();
             }
+        }
+
+        public virtual void dgvGrilla_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

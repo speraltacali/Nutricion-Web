@@ -16,6 +16,7 @@ namespace Nutrucion_App.Core
     public partial class _0025_Consulta_Nivel : _0009_Consulta_Base
     {
         private readonly INivelServicio _nivelServicio = new NivelServicio();
+        public long planId;
 
         public _0025_Consulta_Nivel()
             :base("Niveles")
@@ -25,7 +26,22 @@ namespace Nutrucion_App.Core
 
         public override void ActualizarDatos(string empty)
         {
-            dgvGrilla.DataSource = _nivelServicio.ObtenerPorFiltro(empty);
+            if (planId != null)
+            {
+                ActualizarPorPlan(planId);
+
+            }
+            if(planId == null)
+            {
+                dgvGrilla.DataSource = _nivelServicio.ObtenerPorFiltro(empty);
+
+                FormatiarGrilla(dgvGrilla);
+            }
+        }
+
+        public void ActualizarPorPlan(long? id)
+        {
+            dgvGrilla.DataSource = _nivelServicio.ObtenerPorPlanId((long)id);
 
             FormatiarGrilla(dgvGrilla);
         }
@@ -43,8 +59,8 @@ namespace Nutrucion_App.Core
             dgvGrilla.Columns["Titulo"].HeaderText = @"Tipo de Nivel";
             dgvGrilla.Columns["Titulo"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; ;
 
-            dgvGrilla.Columns["Precio"].HeaderText = @"Precio";
-            dgvGrilla.Columns["Precio"].Width = 120;
+            //dgvGrilla.Columns["Precio"].HeaderText = @"Precio";
+            //dgvGrilla.Columns["Precio"].Width = 120;
         }
 
         public override void Buscar(string cadena)
@@ -53,6 +69,8 @@ namespace Nutrucion_App.Core
 
             base.Buscar(cadena);
         }
+
+      
 
         //******************************** OPERACIONES ****************************************
 

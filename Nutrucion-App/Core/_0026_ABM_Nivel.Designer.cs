@@ -152,7 +152,17 @@ namespace Nutrucion_App.Core
             // nupPrecio
             // 
             this.nupPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nupPrecio.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             this.nupPrecio.Location = new System.Drawing.Point(167, 443);
+            this.nupPrecio.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nupPrecio.Name = "nupPrecio";
             this.nupPrecio.Size = new System.Drawing.Size(120, 26);
             this.nupPrecio.TabIndex = 21;
@@ -162,16 +172,16 @@ namespace Nutrucion_App.Core
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Controls.Add(this.btnImagen);
             this.panel3.Controls.Add(this.pictureImagen);
-            this.panel3.Location = new System.Drawing.Point(532, 112);
+            this.panel3.Location = new System.Drawing.Point(524, 112);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(213, 201);
+            this.panel3.Size = new System.Drawing.Size(221, 288);
             this.panel3.TabIndex = 22;
             // 
             // btnImagen
             // 
             this.btnImagen.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImagen.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnImagen.Location = new System.Drawing.Point(51, 147);
+            this.btnImagen.Location = new System.Drawing.Point(55, 221);
             this.btnImagen.Name = "btnImagen";
             this.btnImagen.Size = new System.Drawing.Size(125, 41);
             this.btnImagen.TabIndex = 1;
@@ -183,9 +193,10 @@ namespace Nutrucion_App.Core
             // 
             this.pictureImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureImagen.Image = global::Nutrucion_App.Properties.Resources.ImagenFondo;
-            this.pictureImagen.Location = new System.Drawing.Point(38, 13);
+            this.pictureImagen.Location = new System.Drawing.Point(17, 13);
             this.pictureImagen.Name = "pictureImagen";
-            this.pictureImagen.Size = new System.Drawing.Size(147, 128);
+            this.pictureImagen.Size = new System.Drawing.Size(192, 184);
+            this.pictureImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureImagen.TabIndex = 0;
             this.pictureImagen.TabStop = false;
             // 

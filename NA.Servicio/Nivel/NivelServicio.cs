@@ -94,7 +94,7 @@ namespace NA.Servicio.Nivel
 
         public IEnumerable<NivelDto> ObtenerPorPlanId(long id)
         {
-            return _nivelRepositorio.ObtenerPorFiltro(x => x.Id == id)
+            return _nivelRepositorio.ObtenerPorFiltro(x => x.PlanId == id)
                                     .Select(x => new NivelDto
                                     {
                                         Id = x.Id,

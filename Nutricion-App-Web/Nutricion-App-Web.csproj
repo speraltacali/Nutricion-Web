@@ -156,6 +156,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,6 +170,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Presentacion\assets\img\favicon.ico" />
+    <Content Include="Content\Presentacion\assets\img\Nutricionista.jpg" />
+    <Content Include="Content\Presentacion\assets\img\profile.jpg" />
+    <Content Include="Content\Presentacion\css\styles.css" />
+    <Content Include="Content\Presentacion\js\scripts.js" />
     <Content Include="Content\TemplateHome\css\sb-admin-2.css" />
     <Content Include="Content\TemplateHome\css\sb-admin-2.min.css" />
     <Content Include="Content\TemplateHome\img\LoginImagen.svg" />
@@ -1877,6 +1884,7 @@
     <Content Include="Content\TemplateIndex\assets\img\team\2.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\team\3.jpg" />
     <Content Include="Content\TemplateIndex\css\styles.css" />
+    <Content Include="Content\TemplateIndex\css\stylesNav.css" />
     <Content Include="Content\TemplateIndex\js\scripts.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2096,10 +2104,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Presentacion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Perfil\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

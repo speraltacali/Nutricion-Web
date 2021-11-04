@@ -1,4 +1,5 @@
 ﻿using NA.Dominio.Base.Helpers;
+using NA.Dominio.Base.Imagen;
 using NA.IServicio.Nivel;
 using NA.IServicio.Nivel.Dto;
 using NA.IServicio.Plan;
@@ -31,6 +32,7 @@ namespace Nutrucion_App.Core
         {
             InitializeComponent();
             Inicializador();
+            CargarDatos(EntidadId);
         }
 
         public override void Inicializador()
@@ -54,6 +56,8 @@ namespace Nutrucion_App.Core
                 txtTitulo.Text = nivel.Titulo;
                 txtDescripcion.Text = nivel.Descripcion;
                 txtLinkPago.Text = nivel.LinkPago;
+                pictureImagen.Image = Imagen.Convertir_Bytes_Imagen(nivel.Imagen);
+                nupPrecio.Value = nivel.Precio;
             }
         }
 
@@ -102,8 +106,9 @@ namespace Nutrucion_App.Core
                     Titulo = txtTitulo.Text,
                     Descripcion = txtDescripcion.Text,
                     LinkPago = txtLinkPago.Text,
+                    Imagen = Imagen.Convertir_Imagen_Bytes(pictureImagen.Image),
                     Precio = nupPrecio.Value,
-                    PlanId = (long)cmdPlan.SelectedItem
+                    PlanId = (long)cmdPlan.SelectedValue
                 };
 
                 _nivelServicio.Agregar(nivel);

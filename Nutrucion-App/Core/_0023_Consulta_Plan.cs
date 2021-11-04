@@ -50,6 +50,14 @@ namespace Nutrucion_App.Core
             base.Buscar(cadena);
         }
 
+
+        public override void dgvGrilla_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var fNivel = new _0025_Consulta_Nivel();
+            fNivel.planId = entidadId.Value;
+            fNivel.ShowDialog();
+        }
+
         //**************************************  OPERACIONES ***********************************
 
         public override bool EjecutarAgregarEntidad()

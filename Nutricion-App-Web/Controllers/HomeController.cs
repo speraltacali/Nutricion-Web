@@ -26,5 +26,12 @@ namespace Nutricion_App_Web.Controllers
 
             return View();
         }
+
+        public ActionResult Presentacion()
+        {
+            ViewBag.Title = "Presentacion Page";
+
+            return View();
+        }
     }
 }
