@@ -50,7 +50,24 @@ namespace NA.Servicio.Plan
 
         public PlanDto Modificar(PlanDto dto)
         {
-            throw new NotImplementedException();
+            var plan = _planRepositorio.ObtenerPorId(dto.Id);
+
+            if(plan != null)
+            {
+                plan.Titulo = dto.Titulo;
+                plan.Descripcion = dto.Descripcion;
+                plan.Eliminado = dto.Eliminado;
+
+                _planRepositorio.Modificar(plan);
+
+                Guardar();
+
+                return dto;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public IEnumerable<PlanDto> ObtenerPorFiltro(string cadena)

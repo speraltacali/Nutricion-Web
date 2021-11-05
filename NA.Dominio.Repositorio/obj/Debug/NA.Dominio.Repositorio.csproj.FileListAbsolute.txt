@@ -90,7 +90,7 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bi
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.AssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CoreCompileInputs.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.dll

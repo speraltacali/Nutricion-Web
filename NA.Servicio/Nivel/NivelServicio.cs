@@ -56,7 +56,28 @@ namespace NA.Servicio.Nivel
 
         public NivelDto Modificar(NivelDto dto)
         {
-            throw new NotImplementedException();
+            var nivel = _nivelRepositorio.ObtenerPorId(dto.Id);
+
+            if(nivel != null)
+            {
+                nivel.Titulo = dto.Titulo;
+                nivel.Descripcion = dto.Descripcion;
+                nivel.Eliminado = dto.Eliminado;
+                nivel.Imagen = dto.Imagen;
+                nivel.LinkPago = dto.LinkPago;
+                nivel.Precio = dto.Precio;
+                nivel.PlanId = dto.PlanId;
+
+                _nivelRepositorio.Modificar(nivel);
+
+                Guardar();
+
+                return dto;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public IEnumerable<NivelDto> ObtenerPorFiltro(string cadena)

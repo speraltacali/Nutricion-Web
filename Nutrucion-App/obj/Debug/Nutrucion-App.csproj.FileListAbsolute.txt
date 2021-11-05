@@ -565,7 +565,7 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\M
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Memory.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Buffers.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csproj.AssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\NutricionApp._0001_Consulta.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0002_ABM.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0003_Perfil.resources

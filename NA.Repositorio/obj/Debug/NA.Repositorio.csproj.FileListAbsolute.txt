@@ -363,7 +363,7 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\bin\Debug\
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\bin\Debug\NA.Dominio.Entidades.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\bin\Debug\NA.Aplicacion.Conexion.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\bin\Debug\NA.Aplicacion.Conexion.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\obj\Debug\NA.Repositorio.csproj.AssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\obj\Debug\NA.Repositorio.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\obj\Debug\NA.Repositorio.csproj.CoreCompileInputs.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\obj\Debug\NA.Repositorio.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio\obj\Debug\NA.Repositorio.dll

@@ -13,5 +13,10 @@ namespace Nutricion_App_Web.Controllers
         {
             return View();
         }
+
+        public ActionResult FechaInforme()
+        {
+            return View();
+        }
     }
 }

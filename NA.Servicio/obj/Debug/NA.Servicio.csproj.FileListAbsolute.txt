@@ -317,7 +317,7 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\bin\Debug\Mic
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\bin\Debug\System.Memory.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\bin\Debug\System.Buffers.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\obj\Debug\NA.Servicio.csproj.AssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\obj\Debug\NA.Servicio.csprojAssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\obj\Debug\NA.Servicio.csproj.CoreCompileInputs.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\obj\Debug\NA.Servicio.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Servicio\obj\Debug\NA.Servicio.dll

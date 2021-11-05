@@ -13,5 +13,15 @@ namespace Nutricion_App_Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        public ActionResult CambiarPass()
+        {
+            return View();
+        }
     }
 }
