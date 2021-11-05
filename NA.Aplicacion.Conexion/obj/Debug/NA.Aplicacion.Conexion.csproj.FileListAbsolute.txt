@@ -51,3 +51,4 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\ob
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csprojAssemblyReference.cache
