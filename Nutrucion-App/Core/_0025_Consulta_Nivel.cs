@@ -90,7 +90,21 @@ namespace Nutrucion_App.Core
 
         public override bool EjecutarEliminarEntidad(long? EntidadId)
         {
-            return base.EjecutarEliminarEntidad(EntidadId);
+            var nivel = _nivelServicio.ObtenerPorId(EntidadId.Value);
+
+            if (MessageBox.Show("Desea Eliminar el Nivel : " + nivel.Titulo, "Eliminar Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                == DialogResult.Yes)
+            {
+                var fEliminar = new _0005_ABM_Item(TipoOperacion.Eliminar, EntidadId.Value);
+                fEliminar.ShowDialog();
+                FormatiarGrilla(dgvGrilla);
+
+                return fEliminar.RealizoOperacion;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }

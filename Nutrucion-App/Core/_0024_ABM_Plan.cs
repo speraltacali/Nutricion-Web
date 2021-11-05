@@ -111,7 +111,12 @@ namespace Nutrucion_App.Core
 
         public override void EjecutarEliminar()
         {
-            base.EjecutarEliminar();
+            var plan = _planServicio.ObtenerPorId(EntidadId.Value);
+
+            if(plan != null)
+            {
+                _planServicio.Eliminar(plan.Id);
+            }
         }
     }
 }

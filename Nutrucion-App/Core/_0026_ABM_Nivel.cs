@@ -123,7 +123,39 @@ namespace Nutrucion_App.Core
 
         public override void EjecutarModificar()
         {
-            base.EjecutarModificar();
+            var plan = _nivelServicio.ObtenerPorId(EntidadId.Value);
+
+            if(plan != null)
+            {
+                try
+                {
+                    plan.Titulo = txtTitulo.Text;
+                    plan.Descripcion = txtDescripcion.Text;
+                    plan.LinkPago = txtLinkPago.Text;
+                    plan.Imagen = Imagen.Convertir_Imagen_Bytes(pictureImagen.Image);
+                    plan.Precio = nupPrecio.Value;
+                    plan.PlanId = (long)cmdPlan.SelectedValue;
+
+                    _nivelServicio.Modificar(plan);
+
+                    RealizoOperacion = true;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Uno o mas de los datos ingresados son invalidos.", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
+
+        public override void EjecutarEliminar()
+        {
+            var nivel = _nivelServicio.ObtenerPorId(EntidadId.Value);
+
+            if(nivel != null)
+            {
+                _nivelServicio.Eliminar(nivel.Id);
+            }
         }
 
         private void btnImagen_Click(object sender, EventArgs e)

@@ -84,34 +84,17 @@ namespace Nutrucion_App.Core
 
         public override void EjecutarAgregar()
         {
-            try
+            var detalle = new ItemDetalleDto
             {
-                if(cmdItem.Text != string.Empty)
-                {
-                    var detalle = new ItemDetalleDto
-                    {
-                        Descripcion = txtDescripcion.Text,
-                        ItemId = (long)cmdItem.SelectedValue,
-                        ItemNombre = cmdItem.Text,
-                        PacienteId = EntidadId.Value
-                    };
+                Descripcion = txtDescripcion.Text,
+                ItemId = (long)cmdItem.SelectedValue,
+                ItemNombre = cmdItem.Text,
+                PacienteId = EntidadId.Value
+            };
 
-                    _detalleServicio.Agregar(detalle);
+            _detalleServicio.Agregar(detalle);
 
-                    RealizoOperacion = true;
-
-                    base.EjecutarAgregar();
-                }
-                else
-                {
-                    AgregarCombo();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Uno o mas de los datos ingresados son invalidos.", "Advertencia",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            RealizoOperacion = true;
         }
 
         public override void EjecutarModificar()

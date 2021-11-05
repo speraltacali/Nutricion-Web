@@ -32,7 +32,15 @@ namespace NA.Servicio.Plan
 
         public void Eliminar(long id)
         {
-            throw new NotImplementedException();
+            var plan = _planRepositorio.ObtenerPorId(id);
+
+            if (plan != null)
+            {
+                plan.Eliminado = true;
+
+                _planRepositorio.Modificar(plan);
+                Guardar();
+            }
         }
 
         public void Guardar()
@@ -48,7 +56,8 @@ namespace NA.Servicio.Plan
         public IEnumerable<PlanDto> ObtenerPorFiltro(string cadena)
         {
             return _planRepositorio.ObtenerPorFiltro(x => x.Titulo.Contains(cadena) ||
-                                                        x.Descripcion.Contains(cadena))
+                                                        x.Descripcion.Contains(cadena)
+                                                        && x.Eliminado != true)
                                                 .Select(x => new PlanDto
                                                 {
                                                     Id = x.Id,

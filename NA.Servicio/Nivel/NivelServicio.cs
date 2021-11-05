@@ -38,7 +38,15 @@ namespace NA.Servicio.Nivel
 
         public void Eliminar(long id)
         {
-            throw new NotImplementedException();
+            var nivel = _nivelRepositorio.ObtenerPorId(id);
+
+            if(nivel != null)
+            {
+                nivel.Eliminado = true;
+
+                _nivelRepositorio.Modificar(nivel);
+                Guardar();
+            }
         }
 
         public void Guardar()
@@ -53,8 +61,9 @@ namespace NA.Servicio.Nivel
 
         public IEnumerable<NivelDto> ObtenerPorFiltro(string cadena)
         {
-            return _nivelRepositorio.ObtenerPorFiltro(X => X.Titulo.Contains(cadena) ||
-                                                        X.Descripcion.Contains(cadena))
+            return _nivelRepositorio.ObtenerPorFiltro(x => x.Titulo.Contains(cadena) ||
+                                                        x.Descripcion.Contains(cadena)
+                                                        && x.Eliminado != true)
                                             .Select(x => new NivelDto
                                             {
                                                 Id = x.Id,
@@ -94,7 +103,7 @@ namespace NA.Servicio.Nivel
 
         public IEnumerable<NivelDto> ObtenerPorPlanId(long id)
         {
-            return _nivelRepositorio.ObtenerPorFiltro(x => x.PlanId == id)
+            return _nivelRepositorio.ObtenerPorFiltro(x => x.PlanId == id && x.Eliminado != true)
                                     .Select(x => new NivelDto
                                     {
                                         Id = x.Id,

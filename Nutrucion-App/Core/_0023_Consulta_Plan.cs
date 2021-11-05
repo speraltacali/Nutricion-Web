@@ -78,7 +78,7 @@ namespace Nutrucion_App.Core
         {
             var plan = _planServicio.ObtenerPorId(EntidadId.Value);
 
-            if (MessageBox.Show("Desea Eliminar el item : " + plan, "Eliminar Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            if (MessageBox.Show("Desea Eliminar el Plan : " + plan.Titulo, "Eliminar Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 == DialogResult.Yes)
             {
                 var fEliminar = new _0024_ABM_Plan(TipoOperacion.Eliminar, EntidadId.Value);
