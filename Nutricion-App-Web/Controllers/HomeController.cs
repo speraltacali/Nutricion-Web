@@ -2,6 +2,7 @@
 using NA.IServicio.Plan;
 using NA.Servicio.Nivel;
 using NA.Servicio.Plan;
+using System.Dynamic;
 using System.Web.Mvc;
 
 namespace Nutricion_App_Web.Controllers
@@ -47,8 +48,11 @@ namespace Nutricion_App_Web.Controllers
             var plan = _planServicio.ObtenerPorId(planId);  /*hay que pasarle el titulo del plan a la vista ¿?*/
             var niveles = _nivelServicio.ObtenerPorPlanId(planId);
 
+            ViewData["PlanTitulo"] = plan.Titulo;
+            ViewData["PlanDescripcion"] = plan.Descripcion;
+            ViewData["Niveles"] = niveles;
 
-            return View(niveles);
+            return View();
         }
     }
 }

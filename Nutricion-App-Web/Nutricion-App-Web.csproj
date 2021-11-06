@@ -1881,6 +1881,7 @@
     <Content Include="Content\TemplateIndex\assets\img\logos\microsoft.svg" />
     <Content Include="Content\TemplateIndex\assets\img\map-image.png" />
     <Content Include="Content\TemplateIndex\assets\img\navbar-logo.svg" />
+    <Content Include="Content\TemplateIndex\assets\img\Planes\FondoPlan.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\Planes\Plan1.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\Planes\Plan2.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\Planes\Plan3.jpg" />
