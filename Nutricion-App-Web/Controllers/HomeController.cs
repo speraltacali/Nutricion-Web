@@ -29,7 +29,9 @@ namespace Nutricion_App_Web.Controllers
         {
             ViewBag.Title = "Login Page";
 
-            return View();
+            var planes = _planServicio.ObtenerPorFiltro(string.Empty);
+
+            return View(planes);
         }
 
         public ActionResult Presentacion()

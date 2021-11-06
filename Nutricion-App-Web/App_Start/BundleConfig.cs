@@ -17,11 +17,11 @@ namespace Nutricion_App_Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js" , "~/Content/TemplateIndex/js/scripts.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/bootstrap.css", "~/Content/TemplateIndex/css/stylesNav.css" ,
+                       "~/Content/TemplateIndex/css/styles.css" , "~/Content/Site.css"));
         }
     }
 }
