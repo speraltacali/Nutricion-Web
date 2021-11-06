@@ -184,6 +184,7 @@
     <Content Include="Content\Presentacion\js\scripts.js" />
     <Content Include="Content\TemplateHome\css\sb-admin-2.css" />
     <Content Include="Content\TemplateHome\css\sb-admin-2.min.css" />
+    <Content Include="Content\TemplateHome\img\FondoHome.jpeg" />
     <Content Include="Content\TemplateHome\img\LoginImagen.svg" />
     <Content Include="Content\TemplateHome\img\LoginUser.jpg" />
     <Content Include="Content\TemplateHome\img\undraw_posting_photo.svg" />
