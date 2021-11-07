@@ -490,8 +490,12 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\N
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\WinFormAnimation.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Dominio.Repositorio.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Dominio.Entidades.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.Base.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Infraestructura.Repositorio.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Context.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.EntityFrameworkCore.dll
@@ -536,10 +540,14 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\N
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Dominio.Repositorio.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Dominio.Entidades.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Dominio.Entidades.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.Base.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.Base.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Infraestructura.Repositorio.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Infraestructura.Repositorio.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Repositorio.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\NA.Context.pdb
@@ -565,7 +573,7 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\M
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Memory.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\bin\Debug\System.Buffers.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csprojAssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion-App.csproj.AssemblyReference.cache
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\NutricionApp._0001_Consulta.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0002_ABM.resources
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\Nutrucion-App\obj\Debug\Nutrucion_App.Core._0003_Perfil.resources

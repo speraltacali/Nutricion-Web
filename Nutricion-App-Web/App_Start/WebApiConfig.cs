@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using NA.Servicio.Token;
 
 namespace Nutricion_App_Web
 {
@@ -13,6 +14,8 @@ namespace Nutricion_App_Web
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new ValidarToken_Handler());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
