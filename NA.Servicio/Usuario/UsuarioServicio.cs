@@ -58,10 +58,15 @@ namespace NA.Servicio.Usuario
 
                 _usuarioRepositorio.Modificar(usuario);
                 Guardar();
+
+                return dto;
+            }
+            else
+            {
+                return null;
             }
 
-
-            return dto;
+            
         }
 
         public IEnumerable<UsuarioDto> ObtenerPorFiltro(string cadena)
@@ -135,13 +140,20 @@ namespace NA.Servicio.Usuario
 
         public bool PuedeIngresar(UsuarioDto dto)
         {
-            dto.Password = _encriptar.EncriptarPassword(dto.Password);
-
-            var usuario = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x => x.User == dto.User && x.Password == dto.Password);
-
-            if (usuario != null)
+            if(dto != null)
             {
-                return true;
+                dto.Password = _encriptar.EncriptarPassword(dto.Password);
+
+                var usuario = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x => x.User == dto.User && x.Password == dto.Password);
+
+                if (usuario != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -153,6 +165,25 @@ namespace NA.Servicio.Usuario
         public bool ValidarSiExiste(string user)
         {
             return _usuarioRepositorio.ObtenerTodo().Any(x=>x.User == user);
+        }
+
+        public UsuarioDto CambiarPassword(UsuarioDto dto)
+        {
+            var usuario = _usuarioRepositorio.ObtenerPorId(dto.Id);
+
+            if (usuario != null)
+            {
+                usuario.Password = _encriptar.EncriptarPassword(dto.Password);
+
+                _usuarioRepositorio.Modificar(usuario);
+                Guardar();
+
+                return dto;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

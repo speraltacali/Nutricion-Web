@@ -1,8 +1,6 @@
-﻿@using NA.IServicio.Usuario.Dto;
+﻿
 @{
     Layout = null;
-
-    var Usuario = new UsuarioDto();
 }
 
 <!DOCTYPE html>
@@ -42,24 +40,28 @@
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block">
-                                <img class="sidebar-card-illustration mb-2" src="~/Content/TemplateHome/img/LoginUser.jpg" style="margin-top:45px; margin-left:10px" height="280" alt="...">
+                                <img class="sidebar-card-illustration mb-2" src="~/Content/TemplateHome/img/LoginUser.jpg" style="margin-top:75px; margin-left:10px" height="280" alt="...">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Iniciá tu sesíon!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Cambia tu Contraseña</h1>
                                     </div>
                                     <form class="user" asp-action="Login" asp-controller="Login" method="post">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                   id="User" name="User" placeholder="Ingrese su Usuario">
+                                            <input type="password" class="form-control form-control-user"
+                                                   id="Password" name="Password" placeholder="Ingrese la Contraseña Actual">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                   id="Password" name="Password" placeholder="Ingrese su Contraseña">
+                                                   id="Password" name="Password" placeholder="Ingrese su nueva Contraseña">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user"
+                                                   id="Password" name="Password" placeholder="Repita su nueva Contraseña">
                                         </div>
                                         <button class="btn btn-primary btn-user btn-block">
-                                            Login
+                                            Confirmar
                                         </button>
                                         <a href="/Home/Index" class="btn btn-danger btn-user btn-block">
                                             Cancelar

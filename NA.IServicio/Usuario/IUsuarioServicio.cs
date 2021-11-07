@@ -29,6 +29,10 @@ namespace NA.IServicio.Usuario
 
         bool ValidarSiExiste(string user);
 
+
+        UsuarioDto CambiarPassword(UsuarioDto dto);
+
+
         void Guardar();
     }
 }

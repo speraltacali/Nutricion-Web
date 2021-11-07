@@ -28,18 +28,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.Aplicacion.Conexion\obj\Debug\NA.Ap
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csprojAssemblyReference.cache
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CoreCompileInputs.cache
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CopyComplete
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.pdb
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll.config
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.pdb
@@ -52,3 +40,15 @@ D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\N
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CopyComplete
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.dll
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\NA.Aplicacion.Conexion.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csprojAssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CoreCompileInputs.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.csproj.CopyComplete
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Aplicacion.Conexion\obj\Debug\NA.Aplicacion.Conexion.pdb

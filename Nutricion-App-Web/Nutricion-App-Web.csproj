@@ -2121,6 +2121,7 @@
     <Content Include="Views\Home\Presentacion.cshtml" />
     <Content Include="Views\Home\Plan.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Login\CambiarPass.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
