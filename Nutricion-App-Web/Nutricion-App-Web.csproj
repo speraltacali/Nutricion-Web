@@ -174,8 +174,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\Api\ControlesController.cs" />
     <Compile Include="Controllers\Api\LoginController.cs" />
     <Compile Include="Controllers\Api\PacienteController.cs" />
+    <Compile Include="Controllers\Api\ProgresoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
@@ -2136,6 +2138,8 @@
     <Content Include="Views\Home\Plan.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Login\CambiarPass.cshtml" />
+    <Content Include="Views\Controles\Controles.cshtml" />
+    <Content Include="Views\Progreso\Progreso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    IEnumerable<NA.IServicio.InformeAntropometrico.Dto.InformeAntropometricoDto> Informes = ViewData["Informes"] as IEnumerable<NA.IServicio.InformeAntropometrico.Dto.InformeAntropometricoDto>;
+}
+
+<h1 style="text-align:center">Controles</h1>
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tabla de controles realizados</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Nuestros controles</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Observacion</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Informes)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Fecha.ToShortDateString()
+                                </td>
+                                <td>
+                                    @item.Observacion
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-xl text-uppercase" href="">Ver</a>
+                                </td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
