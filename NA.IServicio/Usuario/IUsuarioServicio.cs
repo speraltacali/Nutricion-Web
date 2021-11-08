@@ -25,12 +25,14 @@ namespace NA.IServicio.Usuario
 
         string GenerarNombreUsuario(string nombre, string apellido);
 
-        bool PuedeIngresar(UsuarioDto dto);
+        UsuarioDto PuedeIngresar(UsuarioDto dto);
 
         bool ValidarSiExiste(string user);
 
 
         UsuarioDto CambiarPassword(UsuarioDto dto);
+
+        UsuarioDto GuardarToken(UsuarioDto dto);
 
 
         void Guardar();

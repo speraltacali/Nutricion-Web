@@ -138,7 +138,7 @@ namespace NA.Servicio.Usuario
             return nombreUsuario;
         }
 
-        public bool PuedeIngresar(UsuarioDto dto)
+        public UsuarioDto PuedeIngresar(UsuarioDto dto)
         {
             if(dto != null)
             {
@@ -148,16 +148,25 @@ namespace NA.Servicio.Usuario
 
                 if (usuario != null)
                 {
-                    return true;
+                    return new UsuarioDto
+                    {
+                        Id = usuario.Id,
+                        User = usuario.User,
+                        Password = usuario.Password,
+                        Bloqueado = usuario.Bloqueado,
+                        Eliminado = usuario.Eliminado,
+                        PacienteId = usuario.PacienteId,
+                        Token = usuario.Token
+                    };
                 }
                 else
                 {
-                    return false;
+                    return null;
                 }
             }
             else
             {
-                return false;
+                return null;
             }
 
         }
@@ -176,6 +185,25 @@ namespace NA.Servicio.Usuario
                 usuario.Password = _encriptar.EncriptarPassword(dto.Password);
 
                 _usuarioRepositorio.Modificar(usuario);
+                Guardar();
+
+                return dto;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public UsuarioDto GuardarToken(UsuarioDto dto)
+        {
+            var user = _usuarioRepositorio.ObtenerPorId(dto.Id);
+
+            if(user != null)
+            {
+                user.Token = dto.Token;
+
+                _usuarioRepositorio.Modificar(user);
                 Guardar();
 
                 return dto;

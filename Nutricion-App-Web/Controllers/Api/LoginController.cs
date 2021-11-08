@@ -28,7 +28,7 @@ namespace Nutricion_App_Web.Controllers.Api
             if(dto == null)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
-            if (_usuarioServicio.PuedeIngresar(dto))
+            if (_usuarioServicio.PuedeIngresar(dto) != null)
             {
                 var token = GenerarToken.Token(dto.User);
                 return Ok(token);

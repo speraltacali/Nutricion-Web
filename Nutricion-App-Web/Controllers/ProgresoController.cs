@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Nutricion_App_Web.Controllers.Api
+namespace Nutricion_App_Web.Controllers
 {
     public class ProgresoController : Controller
     {

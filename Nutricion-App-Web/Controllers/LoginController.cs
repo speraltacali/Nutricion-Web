@@ -1,5 +1,6 @@
 ﻿using NA.IServicio.Usuario;
 using NA.IServicio.Usuario.Dto;
+using NA.Servicio.Token;
 using NA.Servicio.Usuario;
 using System;
 using System.Collections.Generic;
@@ -27,8 +28,15 @@ namespace Nutricion_App_Web.Controllers
         [HttpPost]
         public ActionResult Login(UsuarioDto dto)
         {
-            if(_usuarioServicio.PuedeIngresar(dto))
+
+            var user = _usuarioServicio.PuedeIngresar(dto);
+
+            if (user != null)
             {
+                user.Token = GenerarToken.Token(user.User);
+
+                _usuarioServicio.GuardarToken(user);
+
                 return RedirectToAction("Home", "Home");
             }
             else

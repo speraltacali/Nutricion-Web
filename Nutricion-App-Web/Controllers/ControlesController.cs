@@ -6,8 +6,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Nutricion_App_Web.Controllers.Api
+namespace Nutricion_App_Web.Controllers
 {
+    [Authorize]
     public class ControlesController : Controller
     {
         private readonly IInformeAntropometricoServicio _informeAntropometrico = new InformeAntropometricoServicio();
@@ -17,7 +18,7 @@ namespace Nutricion_App_Web.Controllers.Api
             return View();
         }
 
-        public ActionResult Controles(long pacienteId=1)
+        public ActionResult Controles(long pacienteId=11)
         {
             var informes = _informeAntropometrico.ObtenerPorIdPaciente(pacienteId);
 
