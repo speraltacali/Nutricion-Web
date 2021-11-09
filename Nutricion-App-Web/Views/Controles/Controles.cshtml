@@ -41,7 +41,14 @@
                                     @item.Observacion
                                 </td>
                                 <td>
-                                    <a class="btn btn-success btn-xl text-uppercase" href="">Ver</a>
+                                    <a class="btn btn-success btn-xl text-uppercase"
+                                       data-val1="@item.PorcentajeGrasa"
+                                       data-val2="@item.PorcentajeMusculo"
+                                       data-val3="@item.KilosGrasa"
+                                       data-val4="@item.KilosMusculo"
+                                       href=""
+                                       data-toggle="modal" 
+                                       data-target="#modalVerDetalle">Ver</a>
                                 </td>
                             </tr>
 
@@ -52,5 +59,48 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalVerDetalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Detalle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <p>Porcentaje Grasa</p>
+                            <div class="modal-bodyGrasa">
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <p>Porcentaje Musculo</p>
+                            <div class="modal-bodyMusculo">
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            Kilos Grasa</p>
+                            <div class="modal-bodyGrasaKilos">
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <p>Kilos Musculo</p>
+                            <div class="modal-bodyMusculoKilos">
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Exportar Detalle</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 </div>
 <!-- /.container-fluid -->
