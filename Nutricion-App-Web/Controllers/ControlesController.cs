@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Nutricion_App_Web.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ControlesController : Controller
     {
         private readonly IInformeAntropometricoServicio _informeAntropometrico = new InformeAntropometricoServicio();
