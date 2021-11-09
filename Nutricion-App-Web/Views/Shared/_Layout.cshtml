@@ -226,10 +226,10 @@
             var porcentajeMusculo = $(event.relatedTarget).data('val2');
             var kilosGrasa = $(event.relatedTarget).data('val3');
             var kilosMusculo = $(event.relatedTarget).data('val4');
-            $(this).find(".modal-bodyGrasa").text(porcentajeGrasa);
-            $(this).find(".modal-bodyMusculo").text(porcentajeMusculo);
-            $(this).find(".modal-bodyGrasaKilos").text(kilosGrasa);
-            $(this).find(".modal-bodyMusculoKilos").text(kilosMusculo);
+            $(this).find(".modal-bodyGrasa").text(porcentajeGrasa + "%");
+            $(this).find(".modal-bodyMusculo").text(porcentajeMusculo + "%");
+            $(this).find(".modal-bodyGrasaKilos").text(kilosGrasa + "Kg");
+            $(this).find(".modal-bodyMusculoKilos").text(kilosMusculo + "Kg");
         });
     </script>
 

@@ -59,7 +59,7 @@ namespace Nutricion_App_Web.Controllers
         {
             ViewBag.Title = "Plan Page";
 
-            var plan = _planServicio.ObtenerPorId(planId);  /*hay que pasarle el titulo del plan a la vista ¿?*/
+            var plan = _planServicio.ObtenerPorId(planId);
             var niveles = _nivelServicio.ObtenerPorPlanId(planId);
 
             ViewData["PlanTitulo"] = plan.Titulo;
