@@ -76,6 +76,28 @@ namespace NA.Servicio.Paciente
             return dto;
         }
 
+        public PacienteDto ObtenerPacientePorUserId(long id)
+        {
+            var paciente = _pacienteRepositorio.ObtenerTodo().FirstOrDefault(x => x.Id == id);
+
+            if(paciente != null)
+            {
+                return new PacienteDto
+                {
+                    Id = paciente.Id,
+                    Apellido = paciente.Apellido,
+                    Nombre = paciente.Nombre,
+                    Dni = paciente.Dni,
+                    FechaNacimiento = paciente.FechaNacimiento,
+                    Sexo = paciente.Sexo
+                };
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public IEnumerable<PacienteDto> ObtenerPorFiltro(string cadena)
         {
             return _pacienteRepositorio.ObtenerPorFiltro(x => x.Eliminado != true && (x.Apellido.Contains(cadena) ||

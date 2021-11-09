@@ -18,7 +18,7 @@ namespace Nutricion_App_Web.Controllers
             return View();
         }
 
-        public ActionResult Controles(long pacienteId=1)
+        public ActionResult Controles(long pacienteId)
         {
             var informes = _informeAntropometrico.ObtenerPorIdPaciente(pacienteId);
 

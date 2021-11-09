@@ -1889,6 +1889,12 @@
     <Content Include="Content\TemplateIndex\assets\img\about\2.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\about\3.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\about\4.jpg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio01.jpeg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio02.jpeg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio03.jpeg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio04.jpeg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio05.jpeg" />
+    <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio06.jpeg" />
     <Content Include="Content\TemplateIndex\assets\img\close-icon.svg" />
     <Content Include="Content\TemplateIndex\assets\img\FondoLogin.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\header-bg.jpg" />

@@ -34,6 +34,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/Home/Presentacion">Quien Soy</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Planes</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#team">Cambios</a></li>
                     @*<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>*@
                 </ul>
             </div>
@@ -44,7 +45,7 @@
         <div class="container">
             <div class="masthead-heading text-uppercase"> Bienvenido a NutriApp!</div>
             <div class="masthead-subheading">Ingresá para ver tu progreso!!</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="/Login/Login">Ingresar</a>
+            <a class="btn btn-primary btn-xl text-uppercase" href="/Home/Home?id=@Session["PacienteId"]">Ingresar</a>
         </div>
     </header>
     <section class="page-section bg-light" id="portfolio">
@@ -72,6 +73,50 @@
                         </div>
                     </div>
                 }
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Cambios</h2>
+                <h3 class="section-subheading text-muted">Logrando el hábito saludable, aumentando la energía y cumpliendo los objetivos corporales. Tambien puedes ver los cambios en nuestros pacientes.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio01.jpeg" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio02.jpeg" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio03.jpeg" alt="..." />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio04.jpeg" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio05.jpeg" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/TemplateIndex/assets/img/Cambios/Cambio06.jpeg" alt="..." />
+                    </div>
+                </div>
             </div>
         </div>
     </section>

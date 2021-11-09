@@ -21,6 +21,8 @@ namespace NA.IServicio.Paciente
 
         IEnumerable<PacienteDto> ObtenerPorFiltro(string cadena);
 
+        PacienteDto ObtenerPacientePorUserId(long id);
+
         void Guardar();
     }
 }

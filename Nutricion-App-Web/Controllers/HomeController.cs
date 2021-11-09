@@ -1,6 +1,8 @@
 ﻿using NA.IServicio.Nivel;
+using NA.IServicio.Paciente;
 using NA.IServicio.Plan;
 using NA.Servicio.Nivel;
+using NA.Servicio.Paciente;
 using NA.Servicio.Plan;
 using System.Dynamic;
 using System.Web.Mvc;
@@ -11,6 +13,8 @@ namespace Nutricion_App_Web.Controllers
     {
         private readonly IPlanServicio _planServicio = new PlanServicio();
         private readonly INivelServicio _nivelServicio = new NivelServicio();
+        private readonly IPacienteServicio _pacienteServicio = new PacienteServicio();
+
         public ActionResult Index()
         {
             ViewBag.Title = "Index Page";
@@ -20,9 +24,19 @@ namespace Nutricion_App_Web.Controllers
 
             return View(planes);
         }
-        public ActionResult Home()
+
+        [Authorize]
+        public ActionResult Home(long id)
         {
             ViewBag.Title = "Home Page";
+
+
+            var persona = _pacienteServicio.ObtenerPacientePorUserId(id);
+
+            if(persona != null)
+            {
+                Session["Paciente"] = persona.ApyNom;
+            }
 
             return View();
         }

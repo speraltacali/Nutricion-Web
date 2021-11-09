@@ -40,7 +40,12 @@ namespace Nutricion_App_Web.Controllers
 
                 FormsAuthentication.SetAuthCookie(user.User, false);
 
-                return RedirectToAction("Home", "Home");
+                Session["UserId"] = user.Id;
+                Session["UserToken"] = user.Token;
+                Session["User"] = user.User;
+                Session["PacienteId"] = user.PacienteId;
+
+                return RedirectToAction("Home", "Home", new { id = user.PacienteId});
             }
             else
             {
@@ -48,9 +53,19 @@ namespace Nutricion_App_Web.Controllers
             }
         }
 
+        [Authorize]
         public ActionResult CambiarPass()
         {
             return View();
+        }
+
+        public ActionResult LogOut()
+        {
+            Session.Abandon();
+
+            FormsAuthentication.SignOut();
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }
