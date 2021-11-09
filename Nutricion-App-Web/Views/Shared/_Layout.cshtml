@@ -18,6 +18,20 @@
 
     <!-- Custom styles for this template-->
     <link href="~/Content/TemplateHome/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: minmax(80px, auto);
+            grid-gap: 15px;
+        }
+
+        .grid-item {
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -206,7 +220,19 @@
     <!-- Page level custom scripts -->
     <script src="~/Content/TemplateHome/js/demo/chart-area-demo.js"></script>
     <script src="~/Content/TemplateHome/js/demo/chart-pie-demo.js"></script>
-  
+    <script>
+        $('#modalVerDetalle').on('show.bs.modal', function (event) { // se usa para mostrar la info del detalle en el modal de controles.
+            var porcentajeGrasa = $(event.relatedTarget).data('val1');
+            var porcentajeMusculo = $(event.relatedTarget).data('val2');
+            var kilosGrasa = $(event.relatedTarget).data('val3');
+            var kilosMusculo = $(event.relatedTarget).data('val4');
+            $(this).find(".modal-bodyGrasa").text(porcentajeGrasa);
+            $(this).find(".modal-bodyMusculo").text(porcentajeMusculo);
+            $(this).find(".modal-bodyGrasaKilos").text(kilosGrasa);
+            $(this).find(".modal-bodyMusculoKilos").text(kilosMusculo);
+        });
+    </script>
+
 </body>
 
 </html>
