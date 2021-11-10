@@ -80,6 +80,7 @@
     <Compile Include="Plan\PlanServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Token\GenerarToken.cs" />
+    <Compile Include="Token\Validar.cs" />
     <Compile Include="Token\ValidarToken Handler.cs" />
     <Compile Include="Usuario\UsuarioServicio.cs" />
   </ItemGroup>

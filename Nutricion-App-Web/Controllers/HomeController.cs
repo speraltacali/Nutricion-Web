@@ -4,6 +4,7 @@ using NA.IServicio.Plan;
 using NA.Servicio.Nivel;
 using NA.Servicio.Paciente;
 using NA.Servicio.Plan;
+using NA.Servicio.Token;
 using System.Dynamic;
 using System.Web.Mvc;
 
@@ -25,20 +26,19 @@ namespace Nutricion_App_Web.Controllers
             return View(planes);
         }
 
-        [Authorize]
-        public ActionResult Home(long id)
+        //[Authorize]
+        public ActionResult Home()
         {
-            ViewBag.Title = "Home Page";
+            var obtenerCookie = Request.Cookies["usuario"];
 
-
-            var persona = _pacienteServicio.ObtenerPacientePorUserId(id);
-
-            if(persona != null)
+            if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
             {
-                Session["Paciente"] = persona.ApyNom;
-            }
+                ViewBag.Title = "Home Page";
 
-            return View();
+                return View();
+            }
+            return RedirectToAction("Login", "Login");
+
         }
         public ActionResult Login()
         {

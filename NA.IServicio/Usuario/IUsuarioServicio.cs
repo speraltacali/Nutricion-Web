@@ -34,6 +34,10 @@ namespace NA.IServicio.Usuario
 
         UsuarioDto GuardarToken(UsuarioDto dto);
 
+        bool ValidarToken(string token);
+
+
+        bool TieneClaveGenerica(long id);
 
         void Guardar();
     }

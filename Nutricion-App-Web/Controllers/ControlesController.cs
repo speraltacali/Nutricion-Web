@@ -1,5 +1,6 @@
 ﻿using NA.IServicio.InformeAntropometrico;
 using NA.Servicio.InformeAntropometrico;
+using NA.Servicio.Token;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Web.Mvc;
 
 namespace Nutricion_App_Web.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ControlesController : Controller
     {
         private readonly IInformeAntropometricoServicio _informeAntropometrico = new InformeAntropometricoServicio();
@@ -20,11 +21,18 @@ namespace Nutricion_App_Web.Controllers
 
         public ActionResult Controles(long pacienteId)
         {
-            var informes = _informeAntropometrico.ObtenerPorIdPaciente(pacienteId);
+            var obtenerCookie = Request.Cookies["usuario"];
 
-            ViewData["Informes"] = informes;
+            if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
+            {
+                pacienteId = Convert.ToInt64(obtenerCookie["pacienteId"]);
+                var informes = _informeAntropometrico.ObtenerPorIdPaciente(pacienteId);
 
-            return View();
+                ViewData["Informes"] = informes;
+
+                return View();
+            }
+            return RedirectToAction("Index", "Home");
         }
     }
 }

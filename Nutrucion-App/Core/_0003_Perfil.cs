@@ -330,16 +330,25 @@ namespace Nutrucion_App.Core
 
         public void FormularioInforme()
         {
-            var detalle = new _0008_InformeAntropometrico(EntidadId);
+            var detalle = new _0008_InformeAntropometrico(PacienteId);
             detalle.ShowDialog();
             CargarDatosInforme(PacienteId);
         }
 
         public void FormularioItem(TipoOperacion operacion)
         {
-            var fModificar = new _0006_ABM_ItemDetalle(operacion,itemId);
-            fModificar.ShowDialog();
-            CargarDatosItem();
+            if(operacion == TipoOperacion.Agregar)
+            {
+                var fAgregar= new _0006_ABM_ItemDetalle(operacion, PacienteId);
+                fAgregar.ShowDialog();
+                CargarDatosItem();
+            }
+            else
+            {
+                var fModificar = new _0006_ABM_ItemDetalle(operacion, itemId);
+                fModificar.ShowDialog();
+                CargarDatosItem();
+            }
         }
 
         private void btnGrafico_Click(object sender, EventArgs e)

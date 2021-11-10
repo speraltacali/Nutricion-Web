@@ -1,5 +1,6 @@
 ﻿using NA.IServicio.Usuario;
 using NA.IServicio.Usuario.Dto;
+using NA.Servicio.Base.Seguridad;
 using NA.Servicio.Token;
 using NA.Servicio.Usuario;
 using System;
@@ -14,6 +15,7 @@ namespace Nutricion_App_Web.Controllers
     public class LoginController : Controller
     {
         private readonly IUsuarioServicio _usuarioServicio = new UsuarioServicio();
+        private Encriptar _encriptar = new Encriptar();
 
         // GET: Login
         public ActionResult Index()
@@ -38,25 +40,88 @@ namespace Nutricion_App_Web.Controllers
 
                 _usuarioServicio.GuardarToken(user);
 
-                FormsAuthentication.SetAuthCookie(user.User, false);
+                HttpCookie cookie = new HttpCookie("usuario");
 
-                Session["UserId"] = user.Id;
-                Session["UserToken"] = user.Token;
-                Session["User"] = user.User;
-                Session["PacienteId"] = user.PacienteId;
+                cookie["nombreUsuario"] = user.User;
 
-                return RedirectToAction("Home", "Home", new { id = user.PacienteId});
+                cookie["userId"] = user.Id.ToString();
+
+                cookie["pacienteId"] = user.PacienteId.ToString();
+
+                cookie["token"] = user.Token;
+
+
+                cookie.Expires = DateTime.Now.AddMinutes(5);
+
+                Response.Cookies.Add(cookie);
+
+                if (_usuarioServicio.TieneClaveGenerica(user.Id))
+                {
+                    return RedirectToAction("CambiarPass");
+                }
+                else
+                {
+                    return RedirectToAction("Home", "Home", new { id = user.PacienteId });
+                }
             }
             else
             {
+                ViewBag.MjsError = "Usuario o Constraseña incorrectos.";
+
                 return View();
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult CambiarPass()
         {
-            return View();
+            var obtenerCookie = Request.Cookies["usuario"];
+
+            if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
+            {
+                return View();
+            }
+            return RedirectToAction("Login");
+        }
+
+        [HttpPost]
+        public ActionResult CambiarPass(CambiarPassDto dto)
+        {
+            var obtenerCookie = Request.Cookies["usuario"];
+
+            if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
+            {
+
+                var userId = obtenerCookie["userId"];
+
+                var user = _usuarioServicio.ObtenerPorId(Convert.ToInt32(userId));
+
+
+                if (_encriptar.DesEncriptarPassword(user.Password) == dto.Password)
+                {
+                    if (dto.NewPassword == dto.RepetirPassword)
+                    {
+                        user.Password = dto.NewPassword;
+
+                        _usuarioServicio.CambiarPassword(user);
+
+                        return RedirectToAction("Home", "Home");
+                    }
+                    else
+                    {
+                        ViewBag.MjsErrorRep = "La nueva contraseña no es igual al campo repetir.";
+
+                        return View();
+                    }
+
+                }
+
+                ViewBag.MjsErrorPass = "La Contraseña no es correcta.";
+
+                return View();
+
+            }
+            return RedirectToAction("Login");
         }
 
         public ActionResult LogOut()

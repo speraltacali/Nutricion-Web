@@ -213,5 +213,43 @@ namespace NA.Servicio.Usuario
                 return null;
             }
         }
+
+        public bool ValidarToken(string token)
+        {
+            var user = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x => x.Token == token);
+
+            if(user != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool TieneClaveGenerica(long id)
+        {
+            var user = _usuarioRepositorio.ObtenerPorId(id);
+
+            if (user != null)
+            {
+                var claveGenerica = _encriptar.EncriptarPassword("Nutricion2021");
+
+                if (claveGenerica == user.Password)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

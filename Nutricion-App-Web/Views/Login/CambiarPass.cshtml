@@ -1,6 +1,8 @@
-﻿
+﻿@using NA.IServicio.Usuario.Dto;
 @{
     Layout = null;
+
+    var Usuario = new CambiarPassDto();
 }
 
 <!DOCTYPE html>
@@ -48,17 +50,31 @@
                                         <h1 class="h4 text-gray-900 mb-4">Cambia tu Contraseña</h1>
                                     </div>
                                     <form class="user" asp-action="Login" asp-controller="Login" method="post">
+
+                                        @if (ViewBag.MjsErrorPass != null)
+                                        {
+                                            <div class="alert alert-danger">@ViewBag.MjsErrorPass</div>
+                                        }
+
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
                                                    id="Password" name="Password" placeholder="Ingrese la Contraseña Actual">
                                         </div>
+
+                                        @if (ViewBag.MjsErrorRep != null)
+                                        {
+                                            <div class="alert alert-danger">@ViewBag.MjsErrorRep</div>
+                                        }
+
                                         <div class="form-group">
+
                                             <input type="password" class="form-control form-control-user"
-                                                   id="Password" name="Password" placeholder="Ingrese su nueva Contraseña">
+                                                   id="Password" name="NewPassword" placeholder="Ingrese su nueva Contraseña">
                                         </div>
+
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                   id="Password" name="Password" placeholder="Repita su nueva Contraseña">
+                                                   id="Password" name="RepetirPassword" placeholder="Repita su nueva Contraseña">
                                         </div>
                                         <button class="btn btn-primary btn-user btn-block">
                                             Confirmar
