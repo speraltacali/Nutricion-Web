@@ -53,27 +53,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Repositorio\obj\Debug\NA.Do
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csprojAssemblyReference.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CoreCompileInputs.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CopyComplete
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.pdb
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll.config
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.pdb
@@ -95,3 +74,24 @@ C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\ob
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CopyComplete
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.dll
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Repositorio.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Dominio.Entidades.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\NA.Repositorio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csprojAssemblyReference.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CoreCompileInputs.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.csproj.CopyComplete
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Dominio.Repositorio\obj\Debug\NA.Dominio.Repositorio.pdb

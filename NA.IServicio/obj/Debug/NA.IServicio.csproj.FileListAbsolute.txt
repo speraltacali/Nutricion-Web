@@ -34,24 +34,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.cs
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csprojAssemblyReference.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CoreCompileInputs.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
@@ -70,3 +52,21 @@ C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
 C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csprojAssemblyReference.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CoreCompileInputs.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
