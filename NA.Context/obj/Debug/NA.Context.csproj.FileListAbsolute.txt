@@ -76,49 +76,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.Context\obj\Debug\NA.Context.Migrat
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Context\obj\Debug\NA.Context.Migrations.UpInforme.resources
 C:\Users\santi\Source\Repos\speraltacali\NutricionApp\NA.Context\obj\Debug\NA.Context.Migrations.porcentajes.resources
 C:\Users\santi\Source\Repos\speraltacali\NutricionApp\NA.Context\obj\Debug\NA.Context.Migrations.UpInforme.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.SqlServer.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.SqlServer.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csprojAssemblyReference.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.RelacionEntidades.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Ejercicio.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EjercicioRelacion.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Enfermedad.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.TerminandoRelacionBase.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Items.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ItemsRelacion.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ActualizandoNormalizacion.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.SuprItem.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.QuitandoEntidades.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.errorCircunferencia.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionesEntity.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.document.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.documents.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ObraSocial.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.porcentajes.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.UpInforme.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Seguridad.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionUsuario.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EntidadesParaWeb.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.SolicitudCorreccion.resources
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.GenerateResource.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CoreCompileInputs.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\bin\Debug\NA.Context.pdb
@@ -162,3 +119,46 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.C
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Context.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Aplicacion.Conexion.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Entidades.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\bin\Debug\NA.Dominio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csprojAssemblyReference.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.RelacionEntidades.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Ejercicio.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EjercicioRelacion.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Enfermedad.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.TerminandoRelacionBase.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Items.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ItemsRelacion.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ActualizandoNormalizacion.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.SuprItem.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.QuitandoEntidades.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.errorCircunferencia.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionesEntity.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.document.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.documents.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.ObraSocial.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.porcentajes.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.UpInforme.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.Seguridad.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionUsuario.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.EntidadesParaWeb.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.SolicitudCorreccion.resources
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.GenerateResource.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CoreCompileInputs.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Context\obj\Debug\NA.Context.pdb

@@ -45,24 +45,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.Repositorio.Base\obj\Debug\NA.Repos
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.SqlServer.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.pdb
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.dll.config
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.SqlServer.xml
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csprojAssemblyReference.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CoreCompileInputs.cache
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CopyComplete
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.dll
-D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.pdb
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll.config
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.pdb
@@ -81,3 +63,21 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\obj\D
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Repositorio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Base.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.pdb
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\NA.Dominio.Entidades.dll.config
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csprojAssemblyReference.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CoreCompileInputs.cache
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.csproj.CopyComplete
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.dll
+D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.Repositorio.Base\obj\Debug\NA.Repositorio.Base.pdb

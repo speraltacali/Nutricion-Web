@@ -9,19 +9,19 @@
     List<int> InformesPorcentajeGrasa = ViewData["InformesPorcentajeGrasa"] as List<int>;
     List<int> PesoCorporal = ViewData["PesoCorporal"] as List<int>;
 }
-<h1 style="text-align:center">Grafica de tu Progreso</h1>
+<h1 style="text-align:center">Gráfica de tu Progreso</h1>
 
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description" style="text-align:center">
-        En la Grafica podrás ver todas nuestras sesiones de modo que puedas tener con control de tus avances.
+        En la Gráfica podrás ver los porcentajes de musculo y grasa registrados durante nuestras sesiones. 
     </p>
 </figure>
 
 <figure class="highcharts-figure">
     <div id="container-peso"></div>
     <p class="highcharts-description" style="text-align:center">
-        En la Grafica podrás ver todas nuestras sesiones de modo que puedas tener con control de tus avances.
+        En la Gráfica podrás ver tu peso registrados durante nuestras sesiones.
     </p>
 </figure>
 
@@ -39,7 +39,7 @@
         Highcharts.chart('container', {
 
             title: {
-                text: 'Grafica de tu Progreso - Porcentaje de Grasa y Musculo'
+                text: 'Gráfica de tu Progreso - Porcentaje de Grasa y Musculo'
             },
 
             subtitle: {
@@ -101,7 +101,7 @@
           Highcharts.chart('container-peso', {
 
             title: {
-                  text: 'Grafica de tu Progreso - Peso Corporal'
+                  text: 'Gráfica de tu Progreso - Peso Corporal'
             },
 
             subtitle: {
