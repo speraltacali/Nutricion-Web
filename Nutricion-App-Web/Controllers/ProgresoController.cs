@@ -45,9 +45,13 @@ namespace Nutricion_App_Web.Controllers
                         fechasPeso.Add(item.Fecha.ToShortDateString());
                     }
 
-                    fechas.Add(item.Fecha.ToShortDateString());
-                    porcentajeMusculo.Add(Convert.ToInt32(item.PorcentajeMusculo));
-                    porcentajeGrasa.Add(Convert.ToInt32(item.PorcentajeGrasa));                    
+                    if (item.Fecha < DateTime.Now)
+                    {
+                        fechas.Add(item.Fecha.ToShortDateString());
+                        porcentajeMusculo.Add(Convert.ToInt32(item.PorcentajeMusculo));
+                        porcentajeGrasa.Add(Convert.ToInt32(item.PorcentajeGrasa));
+                    }
+                                        
                 }             
                
 

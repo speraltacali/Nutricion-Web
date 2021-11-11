@@ -31,6 +31,12 @@ namespace Nutricion_App_Web.Controllers
         [HttpPost]
         public ActionResult Login(UsuarioDto dto)
         {
+            if (string.IsNullOrEmpty(dto.User) || string.IsNullOrEmpty(dto.Password))
+            {
+                ViewBag.MjsError = "Por favor ingrese un Usuario y Contraseña.";
+
+                return View();
+            }
 
             var user = _usuarioServicio.PuedeIngresar(dto);
 
