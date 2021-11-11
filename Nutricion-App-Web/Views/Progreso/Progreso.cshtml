@@ -4,13 +4,22 @@
 }
 @{
     List<string> InformesFechas = ViewData["InformesFechas"] as List<string>;
+    List<string> FechasPeso = ViewData["FechaPeso"] as List<string>;
     List<int> InformesPorcentajeMusculo = ViewData["InformesPorcentajeMusculo"] as List<int>;
     List<int> InformesPorcentajeGrasa = ViewData["InformesPorcentajeGrasa"] as List<int>;
+    List<int> PesoCorporal = ViewData["PesoCorporal"] as List<int>;
 }
-<h1 style="text-align:center">Progreso</h1>
+<h1 style="text-align:center">Grafica de tu Progreso</h1>
 
 <figure class="highcharts-figure">
     <div id="container"></div>
+    <p class="highcharts-description" style="text-align:center">
+        En la Grafica podrás ver todas nuestras sesiones de modo que puedas tener con control de tus avances.
+    </p>
+</figure>
+
+<figure class="highcharts-figure">
+    <div id="container-peso"></div>
     <p class="highcharts-description" style="text-align:center">
         En la Grafica podrás ver todas nuestras sesiones de modo que puedas tener con control de tus avances.
     </p>
@@ -30,7 +39,7 @@
         Highcharts.chart('container', {
 
             title: {
-                text: 'Grafica de tu Progreso'
+                text: 'Grafica de tu Progreso - Porcentaje de Grasa y Musculo'
             },
 
             subtitle: {
@@ -39,7 +48,7 @@
 
             yAxis: {
                 title: {
-                    text: 'Kilos'
+                    text: 'Porcentaje %'
                 },
             },
 
@@ -68,6 +77,65 @@
             }, {
                 name: 'Porcentaje de Musculo',
                 data: @Html.Raw(@Json.Encode(InformesPorcentajeMusculo))
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
+
+        });
+
+
+
+          Highcharts.chart('container-peso', {
+
+            title: {
+                  text: 'Grafica de tu Progreso - Peso Corporal'
+            },
+
+            subtitle: {
+                text: ''
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Kilogramos'
+                },
+            },
+
+            xAxis: {
+                categories: [@Html.Raw("'" + String.Join("','", (FechasPeso.ToList())) + "'")],
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                }
+            },
+
+            series: [{
+                name: 'Peso Corporal',
+                data: @Html.Raw(@Json.Encode(PesoCorporal))
+
             }],
 
             responsive: {

@@ -33,24 +33,49 @@
                     <tbody>
                         @foreach (var item in Informes)
                         {
-                            <tr>
-                                <td>
-                                    @item.Fecha.ToShortDateString()
-                                </td>
-                                <td>
-                                    @item.Observacion
-                                </td>
-                                <td>
-                                    <a class="btn btn-success btn-xl text-uppercase"
-                                       data-val1="@item.PorcentajeGrasa"
-                                       data-val2="@item.PorcentajeMusculo"
-                                       data-val3="@item.KilosGrasa"
-                                       data-val4="@item.KilosMusculo"
-                                       href=""
-                                       data-toggle="modal" 
-                                       data-target="#modalVerDetalle">Ver</a>
-                                </td>
-                            </tr>
+                            if (item.Fecha <= DateTime.Now)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.Fecha.ToShortDateString()
+                                    </td>
+                                    <td>
+                                        @item.Observacion
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-success btn-xl text-uppercase"
+                                           data-val1="@item.PorcentajeGrasa"
+                                           data-val2="@item.PorcentajeMusculo"
+                                           data-val3="@item.KilosGrasa"
+                                           data-val4="@item.KilosMusculo"
+                                           href=""
+                                           data-toggle="modal"
+                                           data-target="#modalVerDetalle">Ver</a>
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                <div class="border-bottom-danger " >
+                                    <div class="card border-left-danger shadow h-100 py-2">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                        Tiene un Turno pendiete registrado con FECHA :
+                                                    </div>
+                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@item.Fecha.ToShortDateString()</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-calendar fa-2x text-gray-700"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br />
+                            }
 
                         }
                     </tbody>

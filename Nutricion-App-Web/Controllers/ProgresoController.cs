@@ -32,10 +32,19 @@ namespace Nutricion_App_Web.Controllers
                 List<string> fechas = new List<string>();
                 List<int> porcentajeMusculo = new List<int>();
                 List<int> porcentajeGrasa = new List<int>();
-                List<string> peso = new List<string>();
+                List<int> peso = new List<int>();
+                List<string> fechasPeso = new List<string>();
 
                 foreach (var item in informes)
                 {
+                    var pesos = _contexturaCorporalServicio.ObtenerPorInforme(item.Id);
+
+                    if(pesos != null)
+                    {
+                        peso.Add(Convert.ToInt32(pesos.Peso));
+                        fechasPeso.Add(item.Fecha.ToShortDateString());
+                    }
+
                     fechas.Add(item.Fecha.ToShortDateString());
                     porcentajeMusculo.Add(Convert.ToInt32(item.PorcentajeMusculo));
                     porcentajeGrasa.Add(Convert.ToInt32(item.PorcentajeGrasa));                    
@@ -45,6 +54,10 @@ namespace Nutricion_App_Web.Controllers
                 ViewData["InformesFechas"] = fechas;
                 ViewData["InformesPorcentajeMusculo"] = porcentajeMusculo;
                 ViewData["InformesPorcentajeGrasa"] = porcentajeGrasa;
+                ViewData["PesoCorporal"] = peso;
+                ViewData["FechaPeso"] = fechasPeso;
+
+
 
                 return View();
             }

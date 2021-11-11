@@ -128,9 +128,22 @@ namespace Nutricion_App_Web.Controllers
         {
             Session.Abandon();
 
-            FormsAuthentication.SignOut();
+            var obtenerCookie = Request.Cookies["usuario"];
 
-            return RedirectToAction("Index", "Home");
+            if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
+            {
+
+                HttpCookie cerrarCookie = new HttpCookie("usuario");
+
+                cerrarCookie.Expires = DateTime.Now.AddDays(-1d);
+
+                Response.Cookies.Add(cerrarCookie);
+
+                return RedirectToAction("Index", "Home");
+
+            }
+
+            return RedirectToAction("Login");
         }
     }
 }

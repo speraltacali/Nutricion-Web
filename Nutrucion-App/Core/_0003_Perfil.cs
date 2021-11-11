@@ -36,6 +36,7 @@ namespace Nutrucion_App.Core
         private static long PacienteId;
         private static long EntidadId;
         private long itemId;
+        private long informeId;
         protected object ObjetoItem;
         protected object ObjetoInforme;
 
@@ -237,7 +238,7 @@ namespace Nutrucion_App.Core
         {
             if (VerificarDatoSeleccionadoInforme())
             {
-                EntidadId = (long)dgvGrilla["Id", e.RowIndex].Value;
+                informeId = (long)dgvGrilla["Id", e.RowIndex].Value;
                 ObjetoInforme = dgvGrilla.Rows[e.RowIndex].DataBoundItem;
             }
         }
@@ -330,7 +331,7 @@ namespace Nutrucion_App.Core
 
         public void FormularioInforme()
         {
-            var detalle = new _0008_InformeAntropometrico(PacienteId);
+            var detalle = new _0008_InformeAntropometrico(informeId);
             detalle.ShowDialog();
             CargarDatosInforme(PacienteId);
         }
