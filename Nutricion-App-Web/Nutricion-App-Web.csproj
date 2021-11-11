@@ -1900,6 +1900,9 @@
     <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio05.jpeg" />
     <Content Include="Content\TemplateIndex\assets\img\Cambios\Cambio06.jpeg" />
     <Content Include="Content\TemplateIndex\assets\img\close-icon.svg" />
+    <Content Include="Content\TemplateIndex\assets\img\Contacto\Instagram.jpg" />
+    <Content Include="Content\TemplateIndex\assets\img\Contacto\Ubicacion.jpg" />
+    <Content Include="Content\TemplateIndex\assets\img\Contacto\whatsApp.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\FondoLogin.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\header-bg.jpg" />
     <Content Include="Content\TemplateIndex\assets\img\logos\facebook.svg" />

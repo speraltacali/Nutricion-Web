@@ -2,7 +2,7 @@
 {
     public class CadenaConexion
     {
-        public static string Servidor = @"DESKTOP-ALCQ1RH";
+        public static string Servidor = @"DESKTOP-N79PIO7\SQLEXPRESS";
 
         public static string BaseDatos = "NutriApps";
 
