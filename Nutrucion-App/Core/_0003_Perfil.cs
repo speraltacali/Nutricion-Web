@@ -197,9 +197,9 @@ namespace Nutrucion_App.Core
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            if (VerificarDatoSeleccionadoInforme() && EntidadId != null)
+            if (VerificarDatoSeleccionadoInforme() && informeId != null)
             {
-                var detalle = new _0008_InformeAntropometrico(EntidadId);
+                var detalle = new _0008_InformeAntropometrico(informeId);
                 detalle.ShowDialog();
                 CargarDatosInforme(PacienteId);
             }

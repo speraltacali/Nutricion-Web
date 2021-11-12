@@ -177,6 +177,7 @@
     <Compile Include="Controllers\ControlesController.cs" />
     <Compile Include="Controllers\Api\LoginController.cs" />
     <Compile Include="Controllers\Api\PacienteController.cs" />
+    <Compile Include="Controllers\DocumentoController.cs" />
     <Compile Include="Controllers\ProgresoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -2156,6 +2157,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Documento\" />
     <Folder Include="Views\Perfil\" />
   </ItemGroup>
   <ItemGroup>

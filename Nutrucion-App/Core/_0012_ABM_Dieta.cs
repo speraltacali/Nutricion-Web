@@ -235,7 +235,7 @@ namespace Nutrucion_App.Core
                 Nombre = openFileDialog1.SafeFileName,
                 Doc = file,
                 DietaId = dietaId
-            };
+            };            
 
             _documentoServicio.Agregar(documento);
         }
