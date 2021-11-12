@@ -4,11 +4,9 @@
 }
 @{
     IEnumerable<NA.IServicio.InformeAntropometrico.Dto.InformeAntropometricoDto> Informes = ViewData["Informes"] as IEnumerable<NA.IServicio.InformeAntropometrico.Dto.InformeAntropometricoDto>;
+    string SinDieta = ViewData["SinDieta"] as string;
 }
-
 <h1 style="text-align:center">Controles</h1>
-
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -17,6 +15,27 @@
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
+        @if (SinDieta == "SI")
+        {
+            <div class="border-bottom-danger " id="divSinDieta">
+                <div class="card border-left-danger shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                    El Informe seleccionado no tiene una dieta asignada. 
+                                </div>                            
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+        }
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Nuestros controles</h6>
         </div>
@@ -48,20 +67,22 @@
                                            data-val2="@item.PorcentajeMusculo"
                                            data-val3="@item.KilosGrasa"
                                            data-val4="@item.KilosMusculo"
+                                           data-val5="@item.Id"
                                            href=""
                                            data-toggle="modal"
-                                           data-target="#modalVerDetalle">Ver</a>
+                                           data-target="#modalVerDetalle"
+                                           onclick="OcultarMensajeSinDieta()">Ver</a>
                                     </td>
                                 </tr>
                             }
                             else
                             {
-                                <div class="border-bottom-danger " >
-                                    <div class="card border-left-danger shadow h-100 py-2">
+                                <div class="border-bottom-success ">
+                                    <div class="card border-left-success shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                         Tiene un Turno pendiete registrado con FECHA :
                                                     </div>
                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">@item.Fecha.ToShortDateString()</div>
@@ -85,55 +106,74 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="modalVerDetalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    @using (Html.BeginForm("Documento", "Documento", FormMethod.Post))
+    {
+        <div class="modal fade" id="modalVerDetalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Detalle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <p style="text-align:center">Porcentaje Grasa</p>
+                                <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/vientre.png" height="100" width="100" alt="Alternate Text" />
+                                <div class="modal-bodyGrasa" style="text-align:center">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <p style="text-align:center">Porcentaje Musculo</p>
+                                <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/arm_muscle_male_body_icon_143229.png" height="100" width="100" alt="Alternate Text" />
+                                <div class="modal-bodyMusculo" style="text-align:center">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <p style="text-align:center">Kilos Grasa</p>
+                                <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/grasa02.png" height="100" width="100" alt="Alternate Text" />
+                                <div class="modal-bodyGrasaKilos" style="text-align:center">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <p style="text-align:center">Kilos Musculo</p>
+                                <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/kilosMusculo.png" height="100" width="100" alt="Alternate Text" />
+                                <div class="modal-bodyMusculoKilos" style="text-align:center">
+                                </div>
+                            </div>
+                        </div>
+                        <input class="modal-bodyIdInforme" type="hidden" name="id" id="id" value="" />
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Descargar Dieta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <!-- End Modal -->
+    <!-- Modal Sin Dieta-->
+    <div class="modal" tabindex="-1" role="dialog" id="modalSinDieta">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Detalle</h5>
+                    <h5 class="modal-title">Atención</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="grid">
-                        <div class="grid-item">
-                            <p style="text-align:center">Porcentaje Grasa</p>
-                            <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/vientre.png" height="100" width="100" alt="Alternate Text" />
-                            <div class="modal-bodyGrasa" style="text-align:center">
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <p style="text-align:center">Porcentaje Musculo</p>
-                            <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/arm_muscle_male_body_icon_143229.png" height="100" width="100" alt="Alternate Text" />
-                            <div class="modal-bodyMusculo" style="text-align:center">
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <p style="text-align:center">Kilos Grasa</p>
-                            <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/grasa02.png" height="100" width="100" alt="Alternate Text" />
-                            <div class="modal-bodyGrasaKilos" style="text-align:center">
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <p style="text-align:center">Kilos Musculo</p>
-                            <img style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);" src="~/Content/TemplateHome/img/kilosMusculo.png" height="100" width="100" alt="Alternate Text" />
-                            <div class="modal-bodyMusculoKilos" style="text-align:center">
-                            </div>
-                        </div>
-                    </div>
-
+                    <p>El informe que seleccionaste no tiene una dieta asignada.</p>
                 </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Descargar Dieta</button>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <div class="modal-footer">                    
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Modal -->
+    <!-- End Modal Sin Dieta -->
 </div>
 <!-- /.container-fluid -->

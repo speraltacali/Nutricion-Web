@@ -23,8 +23,8 @@ namespace Nutricion_App_Web.Controllers
             return View();
         }
 
-        [HttpGet]
-        public FileResult Documento(long id = 4)
+        [HttpPost]
+        public ActionResult Documento(long id)
             {
             var dieta = _dietaServicio.ObtenerPorInforme(id);
 
@@ -47,7 +47,7 @@ namespace Nutricion_App_Web.Controllers
             }
             else
             {
-                return null;
+                return RedirectToAction("Controles", "Controles", new {SinDieta = "SI"});
             }
         }
     }
