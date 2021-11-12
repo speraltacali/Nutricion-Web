@@ -16,8 +16,9 @@ namespace Nutricion_App_Web.Controllers
             return View();
         }
 
-        public ActionResult Controles()
+        public ActionResult Controles(string SinDieta)
         {
+            var _sinDieta = SinDieta == "SI" ? "SI" : "NO";         
             var obtenerCookie = Request.Cookies["usuario"];
 
             if (Validar.ValidarCookie(obtenerCookie == null ? "" : obtenerCookie["token"]))
@@ -26,6 +27,7 @@ namespace Nutricion_App_Web.Controllers
                var informes = _informeAntropometrico.ObtenerPorIdPaciente(pacienteId);
 
                 ViewData["Informes"] = informes;
+                ViewData["SinDieta"] = _sinDieta;
 
                 return View();
             }

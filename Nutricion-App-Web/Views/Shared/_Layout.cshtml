@@ -7,6 +7,7 @@
     IPacienteServicio pacienteServicio = new PacienteServicio();
 
     var paciente = pacienteServicio.ObtenerPorId(Convert.ToInt32(pacienteId));
+    string SinDieta = ViewData["SinDieta"] as string;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -235,16 +236,28 @@
     <script src="~/Content/TemplateHome/js/demo/chart-area-demo.js"></script>
     <script src="~/Content/TemplateHome/js/demo/chart-pie-demo.js"></script>
     <script>
-        $('#modalVerDetalle').on('show.bs.modal', function (event) { // se usa para mostrar la info del detalle en el modal de controles.
+        $('#modalVerDetalle').on('show.bs.modal', function (event) { // se usa para mostrar la info del detalle en el modal de controles.          
+            
             var porcentajeGrasa = $(event.relatedTarget).data('val1');
             var porcentajeMusculo = $(event.relatedTarget).data('val2');
             var kilosGrasa = $(event.relatedTarget).data('val3');
             var kilosMusculo = $(event.relatedTarget).data('val4');
+            var IdInforme = $(event.relatedTarget).data('val5');
             $(this).find(".modal-bodyGrasa").text(porcentajeGrasa + "%");
             $(this).find(".modal-bodyMusculo").text(porcentajeMusculo + "%");
             $(this).find(".modal-bodyGrasaKilos").text(kilosGrasa + "Kg");
             $(this).find(".modal-bodyMusculoKilos").text(kilosMusculo + "Kg");
+            $(this).find(".modal-bodyIdInforme").val(IdInforme);
         });
+
+        function OcultarMensajeSinDieta() {
+            var x = document.getElementById("divSinDieta");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 
 </body>
