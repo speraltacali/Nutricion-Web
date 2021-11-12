@@ -56,8 +56,6 @@
             this.ItemPlanesConsulta = new System.Windows.Forms.ToolStripMenuItem();
             this.ItemNivelConsulta = new System.Windows.Forms.ToolStripMenuItem();
             this.ItemNivel = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -285,8 +283,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemsToolStripMenuItem,
             this.circunferenciaToolStripMenuItem,
-            this.ItemPlanes,
-            this.toolStripMenuItem4});
+            this.ItemPlanes});
             this.menuStrip1.Location = new System.Drawing.Point(159, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1078, 34);
@@ -306,14 +303,14 @@
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.consultaToolStripMenuItem.Text = "Consulta";
             this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
@@ -354,7 +351,7 @@
             // ItemPlanesConsulta
             // 
             this.ItemPlanesConsulta.Name = "ItemPlanesConsulta";
-            this.ItemPlanesConsulta.Size = new System.Drawing.Size(180, 30);
+            this.ItemPlanesConsulta.Size = new System.Drawing.Size(164, 30);
             this.ItemPlanesConsulta.Text = "Consulta";
             this.ItemPlanesConsulta.Click += new System.EventHandler(this.ItemPlanesConsulta_Click);
             // 
@@ -363,30 +360,15 @@
             this.ItemNivelConsulta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ItemNivel});
             this.ItemNivelConsulta.Name = "ItemNivelConsulta";
-            this.ItemNivelConsulta.Size = new System.Drawing.Size(180, 30);
+            this.ItemNivelConsulta.Size = new System.Drawing.Size(164, 30);
             this.ItemNivelConsulta.Text = "Nivel";
             // 
             // ItemNivel
             // 
             this.ItemNivel.Name = "ItemNivel";
-            this.ItemNivel.Size = new System.Drawing.Size(180, 30);
+            this.ItemNivel.Size = new System.Drawing.Size(164, 30);
             this.ItemNivel.Text = "Consulta";
             this.ItemNivel.Click += new System.EventHandler(this.ItemNivel_Click);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem5});
-            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(122, 30);
-            this.toolStripMenuItem4.Text = "Solicitudes";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(164, 30);
-            this.toolStripMenuItem5.Text = "Consulta";
             // 
             // btnSalir
             // 
@@ -638,8 +620,6 @@
         private System.Windows.Forms.ToolStripMenuItem ItemPlanesConsulta;
         private System.Windows.Forms.ToolStripMenuItem ItemNivelConsulta;
         private System.Windows.Forms.ToolStripMenuItem ItemNivel;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
     }
 }
 

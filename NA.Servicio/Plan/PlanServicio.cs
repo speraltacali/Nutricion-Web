@@ -72,8 +72,8 @@ namespace NA.Servicio.Plan
 
         public IEnumerable<PlanDto> ObtenerPorFiltro(string cadena)
         {
-            return _planRepositorio.ObtenerPorFiltro(x => x.Titulo.Contains(cadena) ||
-                                                        x.Descripcion.Contains(cadena)
+            return _planRepositorio.ObtenerPorFiltro(x => (x.Titulo.Contains(cadena) ||
+                                                        x.Descripcion.Contains(cadena)) 
                                                         && x.Eliminado != true)
                                                 .Select(x => new PlanDto
                                                 {

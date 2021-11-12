@@ -95,7 +95,7 @@ namespace Nutrucion_App.Core
             if (MessageBox.Show("Desea Eliminar el Nivel : " + nivel.Titulo, "Eliminar Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 == DialogResult.Yes)
             {
-                var fEliminar = new _0005_ABM_Item(TipoOperacion.Eliminar, EntidadId.Value);
+                var fEliminar = new _0026_ABM_Nivel(TipoOperacion.Eliminar, EntidadId.Value);
                 fEliminar.ShowDialog();
                 FormatiarGrilla(dgvGrilla);
 

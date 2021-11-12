@@ -82,8 +82,8 @@ namespace NA.Servicio.Nivel
 
         public IEnumerable<NivelDto> ObtenerPorFiltro(string cadena)
         {
-            return _nivelRepositorio.ObtenerPorFiltro(x => x.Titulo.Contains(cadena) ||
-                                                        x.Descripcion.Contains(cadena)
+            return _nivelRepositorio.ObtenerPorFiltro(x => (x.Titulo.Contains(cadena) ||
+                                                        x.Descripcion.Contains(cadena))
                                                         && x.Eliminado != true)
                                             .Select(x => new NivelDto
                                             {
