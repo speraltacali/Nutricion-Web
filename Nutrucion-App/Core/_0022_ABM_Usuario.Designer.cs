@@ -33,7 +33,7 @@ namespace Nutrucion_App.Core
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHabilitado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -80,24 +80,25 @@ namespace Nutrucion_App.Core
             this.txtPassword.TabIndex = 12;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btnHabilitado
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 20.25F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(207, 267);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(271, 44);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Habilitado";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHabilitado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnHabilitado.Font = new System.Drawing.Font("Cooper Black", 20.25F);
+            this.btnHabilitado.ForeColor = System.Drawing.Color.White;
+            this.btnHabilitado.Location = new System.Drawing.Point(197, 267);
+            this.btnHabilitado.Name = "btnHabilitado";
+            this.btnHabilitado.Size = new System.Drawing.Size(271, 44);
+            this.btnHabilitado.TabIndex = 13;
+            this.btnHabilitado.Text = "Habilitado";
+            this.btnHabilitado.UseVisualStyleBackColor = false;
+            this.btnHabilitado.Click += new System.EventHandler(this.btnHabilitado_Click);
             // 
             // _0022_ABM_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 323);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHabilitado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
@@ -108,7 +109,7 @@ namespace Nutrucion_App.Core
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.txtPassword, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnHabilitado, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +121,6 @@ namespace Nutrucion_App.Core
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHabilitado;
     }
 }

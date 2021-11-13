@@ -42,6 +42,12 @@ namespace Nutrucion_App.Core
 
                 txtUsuario.Text = user.User;
                 txtPassword.Text = _encriptar.DesEncriptarPassword(user.Password);
+
+                if (user.Bloqueado)
+                {
+                    btnHabilitado.BackColor = Color.LightCoral;
+                    btnHabilitado.Text = "Deshabilitado";
+                }
             }
             else
             {
@@ -96,5 +102,44 @@ namespace Nutrucion_App.Core
             }
         }
 
+        private void btnHabilitado_Click(object sender, EventArgs e)
+        {
+            if (EntidadId.HasValue)
+            {
+                var user = _usuarioServicio.ObtenerPorIdPaciente(EntidadId.Value);
+
+                if (!user.Bloqueado)
+                {
+                    if (MessageBox.Show("Desea Bloquear el usuario de este paciente?", "Bloquear Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                         == DialogResult.Yes)
+                    {
+                        var operacion =_usuarioServicio.BloquearUsuario(user.Id);
+
+                        if (operacion)
+                        {
+                            MessageBox.Show("Operacion Exitosa.", "Mensaje",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+                else
+                {
+                    if (MessageBox.Show("Desea Desbloquear el usuario de este paciente?", "Bloquear Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                         == DialogResult.Yes)
+                    {
+                        var operacion = _usuarioServicio.DesBloquearUsuario(user.Id);
+
+                        if (operacion)
+                        {
+                            MessageBox.Show("Operacion Exitosa.", "Mensaje",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+
+                Close();
+
+            }
+        }
     }
 }

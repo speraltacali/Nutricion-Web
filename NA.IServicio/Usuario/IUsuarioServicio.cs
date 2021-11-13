@@ -36,6 +36,9 @@ namespace NA.IServicio.Usuario
 
         bool ValidarToken(string token);
 
+        bool BloquearUsuario(long id);
+
+        bool DesBloquearUsuario(long id);
 
         bool TieneClaveGenerica(long id);
 

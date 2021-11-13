@@ -105,7 +105,7 @@ namespace NA.Servicio.InformeAntropometrico
 
         public IEnumerable<InformeAntropometricoDto> ObtenerPorIdPaciente(long id)
         {
-            return _informeAntropometrico.ObtenerPorFiltro(x => x.PacienteId == id && !x.Eliminado == true)
+            return _informeAntropometrico.ObtenerPorFiltro(x => x.PacienteId == id && !x.Eliminado == true) 
                 .Select(x => new InformeAntropometricoDto()
                 {
                     Id = x.Id,
@@ -193,7 +193,7 @@ namespace NA.Servicio.InformeAntropometrico
         {
             var informe = _informeAntropometrico.ObtenerPorId(id);
 
-            return _informeAntropometrico.ObtenerPorFiltro(x=> x.Fecha > informe.Fecha &&  x.Eliminado != true 
+            return _informeAntropometrico.ObtenerPorFiltro(x=> x.Fecha > informe.Fecha && x.Fecha < DateTime.Now &&  x.Eliminado != true 
                 && x.PacienteId == pacienteId )
                 .Select(x => new InformeAntropometricoDto
                 {
@@ -232,6 +232,24 @@ namespace NA.Servicio.InformeAntropometrico
                     Fecha = x.Fecha,
                     PacienteId = x.PacienteId
                 }).OrderBy(x=>x.Fecha).ToList();
+        }
+
+        public IEnumerable<InformeAntropometricoDto> ObtenerPorIdPacienteFecha(long id)
+        {
+            return _informeAntropometrico.ObtenerPorFiltro(x => x.PacienteId == id && x.Fecha < DateTime.Now && !x.Eliminado == true)
+                .Select(x => new InformeAntropometricoDto()
+                {
+                    Id = x.Id,
+                    Numero = x.Numero,
+                    Observacion = x.Observacion,
+                    PorcentajeGrasa = x.PorcentajeGrasa,
+                    PorcentajeMusculo = x.PorcentajeMusculo,
+                    KilosGrasa = x.KilosGrasa,
+                    KilosMusculo = x.KilosMusculo,
+                    Eliminado = x.Eliminado,
+                    Fecha = x.Fecha,
+                    PacienteId = x.PacienteId
+                }).OrderBy(x => x.Fecha).ToList();
         }
     }
 }   

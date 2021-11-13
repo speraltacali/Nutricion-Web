@@ -128,6 +128,7 @@ namespace Nutrucion_App.Core
 
             dgv.Columns["Fecha"].HeaderText = @"Fecha del nuevo Informe";
             dgv.Columns["Fecha"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv.Columns["Fecha"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
             //dgv.Columns["Numero"].Width = 120;
             //dgv.Columns["Numero"].HeaderText = @"Numero";

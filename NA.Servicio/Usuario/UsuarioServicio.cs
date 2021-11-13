@@ -251,5 +251,43 @@ namespace NA.Servicio.Usuario
                 return false;
             }
         }
+
+        public bool BloquearUsuario(long id)
+        {
+            var user = _usuarioRepositorio.ObtenerPorId(id);
+
+            if(user != null)
+            {
+                user.Bloqueado = true;
+
+                _usuarioRepositorio.Modificar(user);
+                Guardar();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool DesBloquearUsuario(long id)
+        {
+            var user = _usuarioRepositorio.ObtenerPorId(id);
+
+            if (user != null)
+            {
+                user.Bloqueado = false;
+
+                _usuarioRepositorio.Modificar(user);
+                Guardar();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

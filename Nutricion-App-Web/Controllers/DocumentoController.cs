@@ -28,22 +28,30 @@ namespace Nutricion_App_Web.Controllers
             {
             var dieta = _dietaServicio.ObtenerPorInforme(id);
 
-            var documento = _documentoServicio.ObtenerPorDieta(dieta.Id);
-
-            if (documento != null)
+            if(dieta != null)
             {
-                string path = AppDomain.CurrentDomain.BaseDirectory;
-                string folder = path + "/temp/";
-                string fullFilePath = folder + documento.Nombre;
 
-                if (!Directory.Exists(folder))
+                var documento = _documentoServicio.ObtenerPorDieta(dieta.Id);
+
+                if (documento != null)
                 {
-                    Directory.CreateDirectory(folder);
+                    string path = AppDomain.CurrentDomain.BaseDirectory;
+                    string folder = path + "/temp/";
+                    string fullFilePath = folder + documento.Nombre;
+
+                    if (!Directory.Exists(folder))
+                    {
+                        Directory.CreateDirectory(folder);
+                    }
+
+                    byte[] imagen = documento.Doc;
+
+                    return File(imagen, documento.Nombre, fullFilePath);
                 }
-
-                byte[] imagen = documento.Doc;
-
-                return File(imagen, documento.Nombre, fullFilePath);
+                else
+                {
+                    return RedirectToAction("Controles", "Controles", new { SinDieta = "SI" });
+                }
             }
             else
             {

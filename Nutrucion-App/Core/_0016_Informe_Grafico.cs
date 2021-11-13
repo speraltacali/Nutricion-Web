@@ -36,8 +36,9 @@ namespace Nutrucion_App.Core
 
         public void CargarDatosCombos()
         {
-            cmbFechaDesde.DataSource = _informeAntropometricoServicio.ObtenerPorIdPaciente(PacienteId);
+            cmbFechaDesde.DataSource = _informeAntropometricoServicio.ObtenerPorIdPacienteFecha(PacienteId);
             cmbFechaDesde.DisplayMember = "Fecha";
+            cmbFechaDesde.FormatString = "dd/MM/yyyy";
             cmbFechaDesde.ValueMember = "Id";
         }
 
@@ -51,6 +52,7 @@ namespace Nutrucion_App.Core
 
                     cmbFechaHasta.DataSource = _informeAntropometricoServicio.ObtenerPorFechaMayor(informe.Id , PacienteId);
                     cmbFechaHasta.DisplayMember = "Fecha";
+                    cmbFechaHasta.FormatString = "dd/MM/yyyy";
                     cmbFechaHasta.ValueMember = "Id";
                 }
                 catch (Exception)
@@ -116,7 +118,7 @@ namespace Nutrucion_App.Core
                 }
                 else
                 {
-                    MessageBox.Show($"El Informe Antropologico numero : {informe.Numero.ToString()} no tiene los datos completos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    MessageBox.Show($"El Informe Antropologico con fecha : {informe.Fecha.ToString()} no tiene los datos completos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                     return;
                 }
             }

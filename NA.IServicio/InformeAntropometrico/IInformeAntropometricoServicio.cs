@@ -25,6 +25,8 @@ namespace NA.IServicio.InformeAntropometrico
 
         IEnumerable<InformeAntropometricoDto> ObtenerPorIdPaciente(long id);
 
+        IEnumerable<InformeAntropometricoDto> ObtenerPorIdPacienteFecha(long id);
+
         IEnumerable<InformeAntropometricoDto> ObtenerPorFiltro(string cadena);
 
         void Guardar();

@@ -201,11 +201,12 @@
             // 
             // dtmFecha
             // 
+            this.dtmFecha.CustomFormat = "dd-MM-yyyy HH:mm";
             this.dtmFecha.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtmFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtmFecha.Location = new System.Drawing.Point(196, 184);
+            this.dtmFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtmFecha.Location = new System.Drawing.Point(157, 184);
             this.dtmFecha.Name = "dtmFecha";
-            this.dtmFecha.Size = new System.Drawing.Size(175, 42);
+            this.dtmFecha.Size = new System.Drawing.Size(257, 42);
             this.dtmFecha.TabIndex = 0;
             // 
             // btnObservacion
