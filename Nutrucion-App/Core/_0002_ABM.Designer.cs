@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Thistle;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Controls.Add(this.pixCancelar);
             this.panel1.Controls.Add(this.pixLimpiar);
@@ -72,7 +72,7 @@
             // 
             // pixLimpiar
             // 
-            this.pixLimpiar.BackColor = System.Drawing.Color.Transparent;
+            this.pixLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pixLimpiar.BackgroundImage = global::Nutrucion_App.Properties.Resources.escoba;
             this.pixLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pixLimpiar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -101,7 +101,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Name = "panel2";

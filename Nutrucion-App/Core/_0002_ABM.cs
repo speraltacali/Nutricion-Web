@@ -235,34 +235,34 @@ namespace Nutrucion_App.Core
 
         private void pixLimpiar_MouseHover(object sender, EventArgs e)
         {
-            pixLimpiar.BackColor = Color.Plum;
+            pixLimpiar.BackColor = Color.SteelBlue;
         }
 
         private void pixEjecutar_MouseHover(object sender, EventArgs e)
         {
-            pixEjecutar.BackColor = Color.Plum;
+            pixEjecutar.BackColor = Color.SteelBlue;
         }
 
         private void pixCancelar_MouseHover(object sender, EventArgs e)
         {
-            pixCancelar.BackColor = Color.Plum;
+            pixCancelar.BackColor = Color.SteelBlue;
         }
 
         //*********************************************************************//
 
         private void pixLimpiar_MouseLeave(object sender, EventArgs e)
         {
-            pixLimpiar.BackColor = Color.Thistle;
+            pixLimpiar.BackColor = Color.Transparent;
         }
 
         private void pixEjecutar_MouseLeave(object sender, EventArgs e)
         {
-            pixEjecutar.BackColor = Color.Thistle;
+            pixEjecutar.BackColor = Color.Transparent;
         }
 
         private void pixCancelar_MouseLeave(object sender, EventArgs e)
         {
-            pixCancelar.BackColor = Color.Thistle;
+            pixCancelar.BackColor = Color.Transparent;
         }
 
         private void TimerOpen_Tick(object sender, EventArgs e)

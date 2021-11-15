@@ -51,7 +51,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblOperacion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;

@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel1.Controls.Add(this.btnGenerarGrafico);
             this.panel1.Controls.Add(this.cmbFechaHasta);
             this.panel1.Controls.Add(this.cmbFechaDesde);
@@ -182,7 +182,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DarkGray;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 275);
@@ -247,7 +247,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkGray;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);

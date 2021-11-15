@@ -125,7 +125,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
@@ -144,7 +144,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkGray;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel4.Controls.Add(this.txtBuscar);
             this.panel4.Controls.Add(this.btnBuscar);
             this.panel4.Controls.Add(this.lblTitulo);

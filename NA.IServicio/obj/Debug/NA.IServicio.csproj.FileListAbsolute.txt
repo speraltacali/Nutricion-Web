@@ -34,24 +34,6 @@ C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.cs
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.dll
 C:\Users\santi\Source\Repos\NutricionsApp\NA.IServicio\obj\Debug\NA.IServicio.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.pdb
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll.config
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csprojAssemblyReference.cache
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CoreCompileInputs.cache
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
-C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
@@ -70,3 +52,21 @@ D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\N
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
 D:\Rober\Facultad\Programacion\Practica Supervisada\NutricionApp\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.IServicio.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Dominio.Base.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.pdb
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\NA.Servicio.Base.dll.config
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csprojAssemblyReference.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CoreCompileInputs.cache
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.csproj.CopyComplete
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.dll
+C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.IServicio\obj\Debug\NA.IServicio.pdb

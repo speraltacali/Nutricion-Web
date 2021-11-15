@@ -256,7 +256,7 @@
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.DarkGray;
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.btnAgregar);
             this.panel14.Controls.Add(this.btnQuitar);
@@ -588,7 +588,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.DarkGray;
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.tabPage4.Controls.Add(this.btnGuardar);
             this.tabPage4.Controls.Add(this.panel20);
             this.tabPage4.Controls.Add(this.panel21);

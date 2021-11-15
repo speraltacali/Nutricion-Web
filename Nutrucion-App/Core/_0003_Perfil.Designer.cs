@@ -47,6 +47,7 @@
             this.txtSexo = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pixImagenSexo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,18 +62,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pixImagenSexo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaItem)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -285,9 +285,19 @@
             this.panel2.Size = new System.Drawing.Size(257, 280);
             this.panel2.TabIndex = 0;
             // 
+            // pixImagenSexo
+            // 
+            this.pixImagenSexo.BackColor = System.Drawing.Color.LightPink;
+            this.pixImagenSexo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pixImagenSexo.Location = new System.Drawing.Point(0, 0);
+            this.pixImagenSexo.Name = "pixImagenSexo";
+            this.pixImagenSexo.Size = new System.Drawing.Size(257, 279);
+            this.pixImagenSexo.TabIndex = 0;
+            this.pixImagenSexo.TabStop = false;
+            // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DarkGray;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 280);
             this.panel5.Name = "panel5";
@@ -296,7 +306,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DarkGray;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -464,16 +474,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // pixImagenSexo
-            // 
-            this.pixImagenSexo.BackColor = System.Drawing.Color.LightPink;
-            this.pixImagenSexo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pixImagenSexo.Location = new System.Drawing.Point(0, 0);
-            this.pixImagenSexo.Name = "pixImagenSexo";
-            this.pixImagenSexo.Size = new System.Drawing.Size(257, 279);
-            this.pixImagenSexo.TabIndex = 0;
-            this.pixImagenSexo.TabStop = false;
-            // 
             // _0003_Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,6 +503,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaItem)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -511,7 +512,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pixImagenSexo)).EndInit();
             this.ResumeLayout(false);
 
         }

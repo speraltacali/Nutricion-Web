@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_0001_Consulta));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -87,7 +87,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -100,17 +100,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(159, 676);
+            this.panel1.Size = new System.Drawing.Size(164, 676);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pictureBox8.BackgroundImage = global::Nutrucion_App.Properties.Resources.logo05;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox8.Location = new System.Drawing.Point(0, 0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(159, 147);
+            this.pictureBox8.Size = new System.Drawing.Size(164, 147);
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
@@ -227,14 +228,14 @@
             this.dgvGrilla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrilla.ColumnHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvGrilla.GridColor = System.Drawing.Color.DarkGray;
             this.dgvGrilla.Location = new System.Drawing.Point(174, 287);
             this.dgvGrilla.Name = "dgvGrilla";
@@ -248,7 +249,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
@@ -278,15 +279,15 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.menuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemsToolStripMenuItem,
             this.circunferenciaToolStripMenuItem,
             this.ItemPlanes});
-            this.menuStrip1.Location = new System.Drawing.Point(159, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(164, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1078, 34);
+            this.menuStrip1.Size = new System.Drawing.Size(1073, 34);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "Menu";
             // 
@@ -295,7 +296,7 @@
             this.itemsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultaToolStripMenuItem,
             this.agregarToolStripMenuItem});
-            this.itemsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.itemsToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGray;
             this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
             this.itemsToolStripMenuItem.Size = new System.Drawing.Size(74, 30);
             this.itemsToolStripMenuItem.Text = "Items";
@@ -319,7 +320,7 @@
             this.circunferenciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultaToolStripMenuItem1,
             this.agregarToolStripMenuItem1});
-            this.circunferenciaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circunferenciaToolStripMenuItem.ForeColor = System.Drawing.Color.DarkGray;
             this.circunferenciaToolStripMenuItem.Name = "circunferenciaToolStripMenuItem";
             this.circunferenciaToolStripMenuItem.Size = new System.Drawing.Size(155, 30);
             this.circunferenciaToolStripMenuItem.Text = "Circunferencia";
@@ -327,14 +328,14 @@
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(164, 30);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             this.consultaToolStripMenuItem1.Click += new System.EventHandler(this.consultaToolStripMenuItem1_Click);
             // 
             // agregarToolStripMenuItem1
             // 
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(164, 30);
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
             this.agregarToolStripMenuItem1.Text = "Agregar";
             this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click);
             // 
@@ -343,7 +344,7 @@
             this.ItemPlanes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ItemPlanesConsulta,
             this.ItemNivelConsulta});
-            this.ItemPlanes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ItemPlanes.ForeColor = System.Drawing.Color.DarkGray;
             this.ItemPlanes.Name = "ItemPlanes";
             this.ItemPlanes.Size = new System.Drawing.Size(81, 30);
             this.ItemPlanes.Text = "Planes";
@@ -351,7 +352,7 @@
             // ItemPlanesConsulta
             // 
             this.ItemPlanesConsulta.Name = "ItemPlanesConsulta";
-            this.ItemPlanesConsulta.Size = new System.Drawing.Size(164, 30);
+            this.ItemPlanesConsulta.Size = new System.Drawing.Size(180, 30);
             this.ItemPlanesConsulta.Text = "Consulta";
             this.ItemPlanesConsulta.Click += new System.EventHandler(this.ItemPlanesConsulta_Click);
             // 
@@ -360,7 +361,7 @@
             this.ItemNivelConsulta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ItemNivel});
             this.ItemNivelConsulta.Name = "ItemNivelConsulta";
-            this.ItemNivelConsulta.Size = new System.Drawing.Size(164, 30);
+            this.ItemNivelConsulta.Size = new System.Drawing.Size(180, 30);
             this.ItemNivelConsulta.Text = "Nivel";
             // 
             // ItemNivel
@@ -398,7 +399,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel2.Controls.Add(this.txtBuscar);
             this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.lblTitulo);
@@ -463,17 +464,17 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = global::Nutrucion_App.Properties.Resources.logo01;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 34);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 162);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(177, 3);
             this.panel3.Name = "panel3";
