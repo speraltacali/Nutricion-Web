@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_0001_Consulta));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -54,8 +54,6 @@
             this.agregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ItemPlanes = new System.Windows.Forms.ToolStripMenuItem();
             this.ItemPlanesConsulta = new System.Windows.Forms.ToolStripMenuItem();
-            this.ItemNivelConsulta = new System.Windows.Forms.ToolStripMenuItem();
-            this.ItemNivel = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -228,14 +226,14 @@
             this.dgvGrilla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrilla.ColumnHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvGrilla.GridColor = System.Drawing.Color.DarkGray;
             this.dgvGrilla.Location = new System.Drawing.Point(174, 287);
             this.dgvGrilla.Name = "dgvGrilla";
@@ -304,14 +302,14 @@
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
             this.consultaToolStripMenuItem.Text = "Consulta";
             this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
@@ -328,22 +326,21 @@
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(164, 30);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             this.consultaToolStripMenuItem1.Click += new System.EventHandler(this.consultaToolStripMenuItem1_Click);
             // 
             // agregarToolStripMenuItem1
             // 
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(164, 30);
             this.agregarToolStripMenuItem1.Text = "Agregar";
             this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click);
             // 
             // ItemPlanes
             // 
             this.ItemPlanes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ItemPlanesConsulta,
-            this.ItemNivelConsulta});
+            this.ItemPlanesConsulta});
             this.ItemPlanes.ForeColor = System.Drawing.Color.DarkGray;
             this.ItemPlanes.Name = "ItemPlanes";
             this.ItemPlanes.Size = new System.Drawing.Size(81, 30);
@@ -355,21 +352,6 @@
             this.ItemPlanesConsulta.Size = new System.Drawing.Size(180, 30);
             this.ItemPlanesConsulta.Text = "Consulta";
             this.ItemPlanesConsulta.Click += new System.EventHandler(this.ItemPlanesConsulta_Click);
-            // 
-            // ItemNivelConsulta
-            // 
-            this.ItemNivelConsulta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ItemNivel});
-            this.ItemNivelConsulta.Name = "ItemNivelConsulta";
-            this.ItemNivelConsulta.Size = new System.Drawing.Size(180, 30);
-            this.ItemNivelConsulta.Text = "Nivel";
-            // 
-            // ItemNivel
-            // 
-            this.ItemNivel.Name = "ItemNivel";
-            this.ItemNivel.Size = new System.Drawing.Size(164, 30);
-            this.ItemNivel.Text = "Consulta";
-            this.ItemNivel.Click += new System.EventHandler(this.ItemNivel_Click);
             // 
             // btnSalir
             // 
@@ -619,8 +601,6 @@
         private System.Windows.Forms.Button btnDecendente;
         private System.Windows.Forms.ToolStripMenuItem ItemPlanes;
         private System.Windows.Forms.ToolStripMenuItem ItemPlanesConsulta;
-        private System.Windows.Forms.ToolStripMenuItem ItemNivelConsulta;
-        private System.Windows.Forms.ToolStripMenuItem ItemNivel;
     }
 }
 

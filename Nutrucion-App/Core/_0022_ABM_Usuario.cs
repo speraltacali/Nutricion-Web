@@ -36,7 +36,13 @@ namespace Nutrucion_App.Core
 
         public override void CargarDatos(long? entidadId)
         {
-            if(entidadId.HasValue)
+
+            AgregarControlesObligatorios(txtUsuario, "Nombre de usuario");
+            AgregarControlesObligatorios(txtPassword, "Contraseña");
+
+            txtUsuario.Focus();
+
+            if (entidadId.HasValue)
             {
                 var user = _usuarioServicio.ObtenerPorIdPaciente(entidadId.Value);
 

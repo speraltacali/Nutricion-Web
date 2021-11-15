@@ -29,12 +29,15 @@ namespace NA.IServicio.Usuario
 
         bool ValidarSiExiste(string user);
 
+        UsuarioDto ObtenerPorNombre(string user);
 
         UsuarioDto CambiarPassword(UsuarioDto dto);
 
         UsuarioDto GuardarToken(UsuarioDto dto);
 
         bool ValidarToken(string token);
+
+        bool ValidarHabilitado(string user);
 
         bool BloquearUsuario(long id);
 

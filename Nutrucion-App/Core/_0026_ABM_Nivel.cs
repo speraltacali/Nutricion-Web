@@ -42,6 +42,8 @@ namespace Nutrucion_App.Core
             AgregarControlesObligatorios(txtDescripcion, "Descripcion");
             AgregarControlesObligatorios(txtLinkPago, "Link de Pago");
             AgregarControlesObligatorios(txtTitulo, "Titulo");
+            AgregarControlesObligatorios(nupPrecio, "Precio");
+            AgregarControlesObligatorios(cmdPlan, "Plan");
 
         }
 

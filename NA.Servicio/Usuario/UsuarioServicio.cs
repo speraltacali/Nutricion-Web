@@ -176,6 +176,11 @@ namespace NA.Servicio.Usuario
             return _usuarioRepositorio.ObtenerTodo().Any(x=>x.User == user);
         }
 
+        public bool ValidarHabilitado(string user)
+        {
+            return _usuarioRepositorio.ObtenerTodo().Any(x => x.User == user &&  x.Bloqueado);
+        }
+
         public UsuarioDto CambiarPassword(UsuarioDto dto)
         {
             var usuario = _usuarioRepositorio.ObtenerPorId(dto.Id);
@@ -287,6 +292,24 @@ namespace NA.Servicio.Usuario
             else
             {
                 return false;
+            }
+        }
+
+        public UsuarioDto ObtenerPorNombre(string dto)
+        {
+            var user = _usuarioRepositorio.ObtenerTodo().FirstOrDefault(x => x.User == dto);
+
+            if (user != null)
+            {
+                return new UsuarioDto
+                {
+                    Id = user.Id,
+                    User = user.User
+                };
+            }
+            else
+            {
+                return null;
             }
         }
     }

@@ -314,13 +314,6 @@ namespace NutricionApp
             fPlanConsulta.ShowDialog();
         }
 
-        private void ItemNivel_Click(object sender, EventArgs e)
-        {
-            var fNivelConsulta = new _0025_Consulta_Nivel();
-            fNivelConsulta.ShowDialog();    
-        }
-
-
 
 
         //private void dgvGrilla_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

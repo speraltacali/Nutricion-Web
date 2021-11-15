@@ -16,6 +16,8 @@ namespace Nutricion_App_Web.Controllers
     {
         private readonly IUsuarioServicio _usuarioServicio = new UsuarioServicio();
         private Encriptar _encriptar = new Encriptar();
+        private static int conteo;
+        private static string nombreUser;
 
         // GET: Login
         public ActionResult Index()
@@ -31,6 +33,9 @@ namespace Nutricion_App_Web.Controllers
         [HttpPost]
         public ActionResult Login(UsuarioDto dto)
         {
+
+            string ErrorLogin = "Usuario o Constraseña incorrectos.";
+
             if (string.IsNullOrEmpty(dto.User) || string.IsNullOrEmpty(dto.Password))
             {
                 ViewBag.MjsError = "Por favor ingrese un Usuario y Contraseña.";
@@ -42,37 +47,99 @@ namespace Nutricion_App_Web.Controllers
 
             if (user != null)
             {
-                user.Token = GenerarToken.Token(user.User);
-
-                _usuarioServicio.GuardarToken(user);
-
-                HttpCookie cookie = new HttpCookie("usuario");
-
-                cookie["nombreUsuario"] = user.User;
-
-                cookie["userId"] = user.Id.ToString();
-
-                cookie["pacienteId"] = user.PacienteId.ToString();
-
-                cookie["token"] = user.Token;
-
-
-                cookie.Expires = DateTime.Now.AddMinutes(5);
-
-                Response.Cookies.Add(cookie);
-
-                if (_usuarioServicio.TieneClaveGenerica(user.Id))
+                if (!user.Bloqueado)
                 {
-                    return RedirectToAction("CambiarPass");
+                    user.Token = GenerarToken.Token(user.User);
+
+                    _usuarioServicio.GuardarToken(user);
+
+                    HttpCookie cookie = new HttpCookie("usuario");
+
+                    cookie["nombreUsuario"] = user.User;
+
+                    cookie["userId"] = user.Id.ToString();
+
+                    cookie["pacienteId"] = user.PacienteId.ToString();
+
+                    cookie["token"] = user.Token;
+
+
+                    cookie.Expires = DateTime.Now.AddMinutes(5);
+
+                    Response.Cookies.Add(cookie);
+
+                    conteo = 0;
+
+                    if (_usuarioServicio.TieneClaveGenerica(user.Id))
+                    {
+                        return RedirectToAction("CambiarPass");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Home", "Home", new { id = user.PacienteId });
+                    }
                 }
                 else
                 {
-                    return RedirectToAction("Home", "Home", new { id = user.PacienteId });
+                    ViewBag.MjsError = "El usuario " + user.User + " esta bloqueado , contactarse con el administrador";
+
+                    return View();
                 }
             }
             else
             {
-                ViewBag.MjsError = "Usuario o Constraseña incorrectos.";
+
+                if (_usuarioServicio.ValidarSiExiste(dto.User))
+                {
+                    if (!_usuarioServicio.ValidarHabilitado(dto.User))
+                    {
+                        if (!string.IsNullOrEmpty(nombreUser))
+                        {
+                            if (dto.User == nombreUser)
+                            {
+                                conteo += 1;
+
+                                if (conteo == 3)
+                                {
+                                    var usuario = _usuarioServicio.ObtenerPorNombre(nombreUser);
+
+                                    _usuarioServicio.BloquearUsuario(usuario.Id);
+
+                                    ViewBag.MjsError = "El usuario " + dto.User + " se bloqueo , contactarse con el administrador";
+                                }
+                                else
+                                {
+                                    ViewBag.MjsError = ErrorLogin;
+                                }
+
+                            }
+                            else
+                            {
+                                nombreUser = dto.User;
+
+                                ViewBag.MjsError = ErrorLogin;
+
+                                conteo = 1;
+                            }
+                        }
+                        else
+                        {
+                            nombreUser = dto.User;
+
+                            ViewBag.MjsError = ErrorLogin;
+
+                            conteo = 1;
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.MjsError = "El usuario " + dto.User + " esta bloqueado , contactarse con el administrador";
+                    }
+                }
+                else
+                {
+                    ViewBag.MjsError = ErrorLogin;
+                }
 
                 return View();
             }
