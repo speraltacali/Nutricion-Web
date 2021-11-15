@@ -84,17 +84,10 @@ namespace NA.Context
 
         public DbSet<ItemDetalle> ItemDetalle { get; set; }
 
-        public DbSet<ObraSocial> ObraSocial { get; set; }
-
-        public DbSet<ObraSocialPaciente> ObraSocialPaciente { get; set; }
 
         public DbSet<Plan> Plan { get; set; }
 
         public DbSet<Nivel> Nivel { get; set; }
-
-        public DbSet<Contenido> Contenido { get; set; }
-
-        public DbSet<Solicitud> Solicitud { get;set; }
 
         // Agregue un DbSet para cada tipo de entidad que desee incluir en el modelo. Para obtener más información 
         // sobre cómo configurar y usar un modelo Code First, vea http://go.microsoft.com/fwlink/?LinkId=390109.

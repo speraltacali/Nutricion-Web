@@ -137,6 +137,10 @@
     <Compile Include="Migrations\202111030404121_SolicitudCorreccion.designer.cs">
       <DependentUpon>202111030404121_SolicitudCorreccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111151936150_CorreccionModelo.cs" />
+    <Compile Include="Migrations\202111151936150_CorreccionModelo.designer.cs">
+      <DependentUpon>202111151936150_CorreccionModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -218,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111030404121_SolicitudCorreccion.resx">
       <DependentUpon>202111030404121_SolicitudCorreccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151936150_CorreccionModelo.resx">
+      <DependentUpon>202111151936150_CorreccionModelo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

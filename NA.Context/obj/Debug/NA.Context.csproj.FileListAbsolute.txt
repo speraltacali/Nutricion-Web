@@ -162,3 +162,4 @@ C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.C
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.csproj.CopyComplete
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.dll
 C:\Users\santi\source\repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.pdb
+C:\Users\santi\Source\Repos\speraltacali\Nutricion-Web\NA.Context\obj\Debug\NA.Context.Migrations.CorreccionModelo.resources

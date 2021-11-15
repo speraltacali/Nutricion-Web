@@ -25,6 +25,5 @@ namespace NA.Dominio.Entidades.Entidades
 
         public virtual Plan Plan { get; set; }
 
-        public virtual IEnumerable<Solicitud> Solicitud { get; set; }
     }
 }

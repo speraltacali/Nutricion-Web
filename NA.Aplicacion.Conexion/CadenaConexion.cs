@@ -4,7 +4,7 @@
     {
         public static string Servidor = @"DESKTOP-ALCQ1RH";
 
-        public static string BaseDatos = "NutricionWeb";
+        public static string BaseDatos = "Nutri";
 
         public static string Usuario = "";
 

@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace NA.Dominio.Entidades.Entidades
 {
-    [Table("ObraSocial")]
     public class ObraSocial : BaseEntity 
     {
         public string Nombre { get; set; }
@@ -17,6 +16,5 @@ namespace NA.Dominio.Entidades.Entidades
 
         //********************************************************//
 
-        public virtual ICollection<ObraSocialPaciente> ObraSocialPacientes { get; set; }
     }
 }

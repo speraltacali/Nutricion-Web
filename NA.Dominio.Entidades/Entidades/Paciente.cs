@@ -30,7 +30,6 @@ namespace NA.Dominio.Entidades.Entidades
 
         public virtual ICollection<InformeAntropometrico> InformeAntropometricos { get; set; }
 
-        public virtual ICollection<ObraSocialPaciente> ObraSocialPacientes { get; set; }
 
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }
